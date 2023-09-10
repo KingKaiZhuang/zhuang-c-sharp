@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\zhuang-c-sharp.csproj",
-      "projectName": "zhuang-c-sharp",
-      "projectPath": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\zhuang-c-sharp.csproj",
+      "projectUniqueName": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\Test1.csproj",
+      "projectName": "Test1",
+      "projectPath": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\Test1.csproj",
       "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\obj\\",
       "projectStyle": "PackageReference",

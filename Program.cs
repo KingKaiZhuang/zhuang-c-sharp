@@ -1,15 +1,16 @@
 ﻿using System;
+using Animal;
 
-class Program
-{
-    static void Main()
-    {
-        Console.Write("請輸入姓名:");
-        string name = Console.ReadLine();
-        Console.Write("請輸入年紀:");
-        string age = Console.ReadLine();
-        Console.WriteLine("你好啊" + name + "你今年" + age + "歲。");
-    }
-}
+Person personOne = new Person();
+personOne.name = "zhuang";
+personOne.age = 17;
+personOne.height = 170;
+personOne.Sayhi();
+Console.WriteLine(personOne.adult());
+
+Console.WriteLine(personOne.name);
+Console.WriteLine(personOne.age);
+Console.WriteLine(personOne.height);
+
 
 
