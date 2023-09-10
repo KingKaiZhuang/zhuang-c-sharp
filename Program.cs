@@ -4,17 +4,12 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello, World!");
-
-        // 正確的初始化Person物件
-        Person person1 = new Person();
-        person1.Name = "Alice";
-        person1.Age = 25;
+        Console.Write("請輸入姓名:");
+        string name = Console.ReadLine();
+        Console.Write("請輸入年紀:");
+        string age = Console.ReadLine();
+        Console.WriteLine("你好啊" + name + "你今年" + age + "歲。");
     }
 }
 
-class Person
-{
-    public string Name;
-    public int Age;
-}
+
