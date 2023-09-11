@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1
+﻿namespace zhuang_c_sharp
 {
     // Drink類別代表一種飲料
     internal class Drink
