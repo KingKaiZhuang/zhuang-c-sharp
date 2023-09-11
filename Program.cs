@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using zhuang_c_sharp;
 
-namespace ConsoleApp1
+namespace Test1
 {
     class Program
     {
@@ -59,7 +59,6 @@ namespace ConsoleApp1
             Console.WriteLine($"折扣後金額為{sellPrice:C2}");
         }
 
-
         private static void OrderDrink(List<Drink> myDrinks, List<OrderItem> myOrders)
         {
             Console.WriteLine();
@@ -104,7 +103,7 @@ namespace ConsoleApp1
             int i = 0;
             foreach (var drink in drinks)
             {
-                Console.WriteLine($"{i,-5} {drink.Name,-8} {drink.Size,-5} {drink.Price,5:C1}");
+                Console.WriteLine($"{i,-5} {drink.Name,-8} {drink.Size,-5} {drink.Price,5}");
                 i++;
             }
         }
