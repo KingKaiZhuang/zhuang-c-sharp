@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\20230911\\Test1.csproj",
-      "projectName": "Test1",
-      "projectPath": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\20230911\\Test1.csproj",
+      "projectUniqueName": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\basic\\basic.csproj",
+      "projectName": "basic",
+      "projectPath": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\basic\\basic.csproj",
       "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\20230911\\obj\\",
+      "outputPath": "C:\\Users\\pudy6\\Documents\\zhuang-c-sharp\\basic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
