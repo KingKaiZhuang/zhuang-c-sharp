@@ -1,15 +1,9 @@
 ﻿namespace zhuang_c_sharp
 {
-    // Drink類別代表一種飲料
-    internal class Drink
+    internal class drink
     {
-        // 飲料的名稱
-        public String Name { get; set; }
-
-        // 飲料的尺寸
-        public String Size { get; set; }
-
-        // 飲料的價格
-        public int Price { get; set; }
+        public string name {  get; set; }
+        public string size { get; set; }
+        public int price { get; set; }
     }
 }
