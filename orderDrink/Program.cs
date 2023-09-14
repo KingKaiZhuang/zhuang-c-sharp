@@ -1,40 +1,29 @@
-﻿//註解選定的程式碼：按下 Ctrl + K，然後再按下 Ctrl + C。
-//取消註解選定的程式碼：按下 Ctrl + K，然後再按下 Ctrl + U。
-
-using orderDrink;
+﻿using orderDrink;
 using System;
-using System.Collections.Generic;
-using System.Reflection;
 
-namespace Test1
+namespace orderDrink
 {
     class Program
     {
         static void Main(string[] args)
         {
-            List<Drink> drinks = new List<Drink>();
-            List<OrderItem> orders = new List<OrderItem>();
-            /*
-                1. 創建一個 List 來儲存飲料
-                2. 顯示每種飲料的資訊
-                3. 訂購飲料
-                4. 計算售價
-            */
-            drinkMenu(drinks);
-            watchMenu(drinks);
-            orderDrink(drinks, orders);
-            CalculateAmount(orders);
+            List<drink> drinks = new List<drink>();
+            List<order> orders = new List<order>();
+            menuCreate(drinks);
+            menuPrint(drinks);
+            menuPost(drinks, orders);
+            menuCount(orders);
         }
 
-        private static void CalculateAmount(List<OrderItem> myOrders)
+        private static void menuCount(List<order> orders)
         {
             double total = 0.0;
             string message = "";
             double sellPrice = 0.0;
-            
-            foreach(OrderItem orderItem in myOrders)
+
+            foreach (order order in orders)
             {
-                total += orderItem.Subtotal;
+                total += order.subtotal;
             }
 
             if (total >= 500)
@@ -59,69 +48,78 @@ namespace Test1
             }
 
             Console.WriteLine();
-            Console.WriteLine($"您總共訂購了{myOrders.Count}個品項，總金額為{total}元，{message}");
+            Console.WriteLine($"您總共訂購了{orders.Count}個品項，總金額為{total}元，{message}");
             Console.WriteLine(message);
             Console.WriteLine($"折扣後金額為{sellPrice:C2}"); // C2 意思為 $
         }
 
-        private static void orderDrink(List<Drink> myDrinks, List<OrderItem> myOrders)
+        private static void menuPost(List<drink> drinks, List<order> orders)
         {
-            Console.WriteLine();
-            Console.WriteLine("請開始訂購飲料，按下x鍵離開。");
+            int idpoint, id, quantity, subtotal;
             string s;
-            int Id, quantity, subtotal;
-            while(true)
+            while (true)
             {
-                Console.Write("請輸入品名編號 ? ");
+                Console.WriteLine("請輸入編號:");
                 s = Console.ReadLine();
                 if (s == "x")
                 {
-                    Console.WriteLine("謝謝惠顧，歡迎下次再來!");
+                    Console.WriteLine("歡迎再光臨!");
                     return;
+                }
+                id = Convert.ToInt32(s);
+                if (id < 0 || id >= drinks.Count)
+                {
+                    Console.WriteLine("請輸入正確編號!");
+                    Console.WriteLine("-----------------------------------------------------");
+                    continue; // 回到迴圈的開始
                 }
                 else
                 {
-                    Id = Convert.ToInt32(s) - 1;
+                    id = Convert.ToInt32(s);
                 }
 
-                Console.Write("請輸入數量: ");
-                s = Console.ReadLine();
 
+
+                Console.WriteLine("請輸入數量");
+                s = Console.ReadLine();
                 if (s == "x")
                 {
-                    Console.WriteLine("謝謝惠顧，歡迎下次再來!");
+                    Console.WriteLine("歡迎再光臨!");
                     return;
                 }
                 else
                 {
                     quantity = Convert.ToInt32(s);
-                    subtotal = myDrinks[Id].Price * quantity;
-                    Console.WriteLine($"您訂購{myDrinks[Id].Name}{myDrinks[Id].Size}{quantity}杯，每杯{myDrinks[Id].Price}元");
-                    myOrders.Add(new OrderItem() { Id = Id, Quantity = quantity, Subtotal = subtotal });
+                    subtotal = quantity * drinks[id].price;
+                    Console.WriteLine($"您購買了{drinks[id].name}，{quantity}杯，一杯{drinks[id].price}元!");
+                    orders.Add(new order { id = id, quantity = quantity, subtotal = subtotal });
+                    Console.WriteLine("-----------------------------------------------------");
                 }
             }
         }
 
-        private static void watchMenu(List<Drink> myDrinks)
+        private static void menuPrint(List<drink> drinks)
         {
-            Console.WriteLine("飲料清單\n");
-            Console.WriteLine(String.Format("{0,-5}{1,-6}{2,-5}{3,-5}", "編號", "品名", "大小", "價格"));
-            Console.WriteLine();
+            Console.WriteLine("以下是我們的飲料菜單哦~");
+            Console.WriteLine("{0,-5}{1,-7}{2,-5}{3,-5}", "編號", "名稱", "大小", "價錢");
+            Console.WriteLine("-----------------------------------------------------");
             int i = 0;
-            foreach (var drink in myDrinks)
+            foreach (drink drink in drinks)
             {
-                Console.WriteLine($"{i + 1,-7}{drink.Name,-6}{drink.Size,-5}{drink.Price,-5}");
+                Console.WriteLine($"{i,-7}{drink.name,-7}{drink.size,-5}{drink.price,-5}");
+                Console.WriteLine("-----------------------------------------------------");
                 i++;
             }
         }
 
-        private static void drinkMenu(List<Drink> myDrinks)
+        private static void menuCreate(List<drink> myDrinkArr)
         {
-            myDrinks.Add(new Drink() { Name = "紅茶", Size = "大杯", Price = 50 });
-            myDrinks.Add(new Drink() { Name = "綠茶", Size = "中杯", Price = 45 });
-            myDrinks.Add(new Drink() { Name = "咖啡", Size = "中杯", Price = 60 });
-            myDrinks.Add(new Drink() { Name = "奶茶", Size = "小杯", Price = 40 });
-            myDrinks.Add(new Drink() { Name = "可樂", Size = "大杯", Price = 55 });
+            myDrinkArr.Add(new drink() { name = "咖啡", size = "大杯", price = 60 });
+            myDrinkArr.Add(new drink() { name = "咖啡", size = "中杯", price = 50 });
+            myDrinkArr.Add(new drink() { name = "紅茶", size = "大杯", price = 30 });
+            myDrinkArr.Add(new drink() { name = "紅茶", size = "中杯", price = 20 });
+            myDrinkArr.Add(new drink() { name = "綠茶", size = "大杯", price = 25 });
+            myDrinkArr.Add(new drink() { name = "綠茶", size = "中杯", price = 20 });
         }
     }
 }

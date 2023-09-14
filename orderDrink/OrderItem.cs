@@ -1,9 +1,9 @@
 ﻿namespace orderDrink
 {
-    internal class OrderItem
+    internal class order
     {
-        public int Id { get; set; }
-        public int Quantity { get; set; }
-        public int Subtotal { get; set; }
+        public int id { get; set; }
+        public int quantity { get; set; }
+        public int subtotal { get; set; }
     }
 }

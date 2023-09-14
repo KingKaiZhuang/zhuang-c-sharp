@@ -55,33 +55,46 @@ namespace Test1
 
         private static void menuPost(List<drink> drinks, List<order> orders)
         {
-            int id, quantity, subtotal;
+            int idpoint,id, quantity, subtotal;
             string s;
-            Console.WriteLine("請輸入編號:");
-            s = Console.ReadLine();
-            if(s == "x")
+            while (true)
             {
-                Console.WriteLine("歡迎再光臨!");
-                return;
-            }
-            else
-            {
+                Console.WriteLine("請輸入編號:");
+                s = Console.ReadLine();
+                if (s == "x")
+                {
+                    Console.WriteLine("歡迎再光臨!");
+                    return;
+                }
                 id = Convert.ToInt32(s);
-            } 
+                if (id < 0 || id >= drinks.Count)
+                {
+                    Console.WriteLine("請輸入正確編號!");
+                    Console.WriteLine("-----------------------------------------------------");
+                    continue; // 回到迴圈的開始
+                }
+                else
+                {
+                    id = Convert.ToInt32(s);
+                }
+
+
             
-            Console.WriteLine("請輸入數量");
-            s = Console.ReadLine();
-            if(s == "x")
-            {
-                Console.WriteLine("歡迎再光臨!");
-                return;
-            }
-            else
-            {
-                quantity = Convert.ToInt32(s);
-                subtotal = quantity * drinks[id].price;
-                Console.WriteLine($"您購買了{drinks[id].name}，{quantity}杯，一杯{drinks[id].price}元!");
-                orders.Add(new order { id = id, quantity = quantity, subtotal = subtotal });
+                Console.WriteLine("請輸入數量");
+                s = Console.ReadLine();
+                if(s == "x")
+                {
+                    Console.WriteLine("歡迎再光臨!");
+                    return;
+                }
+                else
+                {
+                    quantity = Convert.ToInt32(s);
+                    subtotal = quantity * drinks[id].price;
+                    Console.WriteLine($"您購買了{drinks[id].name}，{quantity}杯，一杯{drinks[id].price}元!");
+                    orders.Add(new order { id = id, quantity = quantity, subtotal = subtotal });
+                    Console.WriteLine("-----------------------------------------------------");
+                }
             }
         }
 
@@ -89,21 +102,24 @@ namespace Test1
         {
             Console.WriteLine("以下是我們的飲料菜單哦~");
             Console.WriteLine("{0,-5}{1,-7}{2,-5}{3,-5}", "編號", "名稱", "大小", "價錢");
+            Console.WriteLine("-----------------------------------------------------");
             int i = 0;
             foreach (drink drink in drinks)
             {
                 Console.WriteLine($"{i,-7}{drink.name,-7}{drink.size,-5}{drink.price,-5}");
+                Console.WriteLine("-----------------------------------------------------");
                 i++;
             }
         }
 
         private static void menuCreate(List<drink> myDrinkArr)
         {
-            myDrinkArr.Add(new drink() { name = "綠茶", size = "大杯", price = 50 });
-            myDrinkArr.Add(new drink() { name = "抹茶", size = "中杯", price = 55 });
-            myDrinkArr.Add(new drink() { name = "奶茶", size = "大杯", price = 60 });
-            myDrinkArr.Add(new drink() { name = "紅茶", size = "大杯", price = 58 });
-            myDrinkArr.Add(new drink() { name = "烏龍", size = "中杯", price = 30 });
+            myDrinkArr.Add(new drink() { name = "咖啡", size = "大杯", price = 60 });
+            myDrinkArr.Add(new drink() { name = "咖啡", size = "中杯", price = 50 });
+            myDrinkArr.Add(new drink() { name = "紅茶", size = "大杯", price = 30 });
+            myDrinkArr.Add(new drink() { name = "紅茶", size = "中杯", price = 20 });
+            myDrinkArr.Add(new drink() { name = "綠茶", size = "大杯", price = 25 });
+            myDrinkArr.Add(new drink() { name = "綠茶", size = "中杯", price = 20 });
         }
     }
 }
