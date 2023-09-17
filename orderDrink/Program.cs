@@ -13,6 +13,7 @@ namespace orderDrink
             menuPrint(drinks);
             menuPost(drinks, orders);
             menuCount(orders);
+            Console.WriteLine("hi");
         }
 
         private static void menuCount(List<order> orders)
