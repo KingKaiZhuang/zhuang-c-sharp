@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Printing;
 using System.Windows;
 using System.Windows.Documents;
 
@@ -10,6 +11,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+
         List<int> primes = new List<int>();
         public MainWindow()
         {
@@ -49,7 +51,7 @@ namespace WpfApp1
             string primeList = $"小於{n}的質數為:";
             string primeMultiple = "";
             foreach (int p in myPrimes) {
-                primeList += $"{p}";
+                primeList += $"{p} ";
                 primeMultiple += $"{p}的倍數為:";
                 int i = 1;
                 while(p*i <= n)
@@ -82,5 +84,6 @@ namespace WpfApp1
         {
 
         }
+
     }
 }
