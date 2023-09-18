@@ -30,7 +30,7 @@ namespace WpfApp1
             }
             else
             {
-                MessageBox.Show($"輸入數值為{number}，小於2，請重新輸入", "輸入錯誤");
+                MessageBox.Show($"輸入數值為{number}，以下是他的質數跟倍數~");
                 for (int i = 2;i <= number;i++)
                 {
                     if (Isprime(i))
@@ -39,9 +39,8 @@ namespace WpfApp1
                     }
                 }
             }
-            // 列出所有的質數
+            // 列出所有的質數與倍數
             ListAllPrimes(primes,number);
-            // 列印質數的倍數
 
         }
 
@@ -55,12 +54,13 @@ namespace WpfApp1
                 int i = 1;
                 while(p*i <= n)
                 {
-                    primeMultiple += $"{p * i}";
+                    primeMultiple += $"{p * i} ";
                     i++;
                 }
                 primeMultiple += "\n";
             }
-            
+            textblock_prime.Text = primeList;
+            TextBlock_multiple.Text = primeMultiple;
         }
 
         private bool Isprime(int p)
