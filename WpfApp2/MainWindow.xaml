@@ -12,6 +12,5 @@
         <Label Content="請輸入整數n?" HorizontalAlignment="Left" Margin="25,22,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Yu Gothic UI Semibold"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="638" Background="#FFDADADA"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="301" Width="638" Background="#FFD6D6D6"/>
-
     </Grid>
 </Window>

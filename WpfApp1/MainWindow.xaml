@@ -12,9 +12,9 @@
             <RowDefinition Height="33*"/>
         </Grid.RowDefinitions>
         <Label Content="請輸入一個數值n" HorizontalAlignment="Left" Margin="53,45,0,0" VerticalAlignment="Top" Height="41" Width="198" FontSize="24" RenderTransformOrigin="0.491,0.559" Foreground="#FF0F8CFF"/>
-        <TextBlock x:Name="TextBlock_multiple" HorizontalAlignment="Left" Margin="111,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="227" Width="610" FontSize="20" Background="#FFE5FFBA" Grid.RowSpan="2"/>
+        <TextBlock x:Name="TextBlock_multiple" HorizontalAlignment="Left" Margin="107,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="227" Width="610" FontSize="20" Background="#FFE5FFBA" Grid.RowSpan="2"/>
         <Button x:Name="Button1" Content="OK" HorizontalAlignment="Left" Margin="645,46,0,0" VerticalAlignment="Top" Height="40" Width="91" FontSize="20" Click="Button1_Click" RenderTransformOrigin="0.083,0.4"/>
         <TextBox x:Name="TextBlock1" HorizontalAlignment="Left" Margin="291,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" TextChanged="TextBox_TextChanged_1" Height="34"/>
-        <TextBlock x:Name="textblock_prime" HorizontalAlignment="Left" Margin="110,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="611" Background="#FFFFB0B0" FontSize="20"/>
+        <TextBlock x:Name="textblock_prime" HorizontalAlignment="Left" Margin="110,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="607" Background="#FFFFB0B0" FontSize="20"/>
     </Grid>
 </Window>
