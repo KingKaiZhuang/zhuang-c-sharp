@@ -1,0 +1,22 @@
+﻿<Window x:Class="TriangleCheck.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriangleCheck"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="4,0,-4,0">
+        <TextBox x:Name="triangleInput1" HorizontalAlignment="Left" Margin="57,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" Height="54" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4"/>
+        <TextBox x:Name="triangleInput2" HorizontalAlignment="Left" Margin="57,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" Height="53" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4"/>
+        <TextBox x:Name="triangleInput3" HorizontalAlignment="Left" Margin="57,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" Height="54" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4"/>
+        <TextBox x:Name="resultOutput" HorizontalAlignment="Left" Margin="429,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" Height="54" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="429,187,36,48">
+            <TextBlock x:Name="outputBlock" Padding="12" TextWrapping="Wrap" Height="auto" Width="297" Background="#FFC3C3C3"/>
+        </ScrollViewer>
+
+
+        <Button Content="送出" HorizontalAlignment="Left" Margin="120,345,0,0" VerticalAlignment="Top" Height="63" Width="194" FontSize="20" Click="buttonClick"/>
+
+    </Grid>
+</Window>

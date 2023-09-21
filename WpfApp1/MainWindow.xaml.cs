@@ -11,7 +11,6 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-
         List<int> primes = new List<int>();
         public MainWindow()
         {
@@ -26,12 +25,10 @@ namespace WpfApp1
             if(!success)
             {
                 MessageBox.Show("請輸入整數", "輸入錯誤");
-            }else if(number < 2)
+            } else if(number < 2)
             {
                 MessageBox.Show($"輸入數值為{number}，小於2，請重新輸入","輸入錯誤");
-            }
-            else
-            {
+            } else {
                 MessageBox.Show($"輸入數值為{number}，以下是他的質數跟倍數~");
                 for (int i = 2;i <= number;i++)
                 {
