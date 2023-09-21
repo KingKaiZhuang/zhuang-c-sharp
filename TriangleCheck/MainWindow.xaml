@@ -7,17 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="4,0,-4,0" Background="#FFC3C3C3">
-        <TextBox x:Name="triangleInput1" HorizontalAlignment="Left" Margin="60,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Height="37" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
-        <TextBox x:Name="triangleInput2" HorizontalAlignment="Left" Margin="60,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="39" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
-        <TextBox x:Name="triangleInput3" HorizontalAlignment="Left" Margin="61,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Height="38" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
-        <TextBlock x:Name="resultOutput" TextWrapping="Wrap" Margin="402,127,63,0" Background="White" TextAlignment="Center" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="18" />
+        <TextBox x:Name="triangleInput1" HorizontalAlignment="Left" Margin="60,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Height="37" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
+        <TextBox x:Name="triangleInput2" HorizontalAlignment="Left" Margin="60,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="39" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
+        <TextBox x:Name="triangleInput3" HorizontalAlignment="Left" Margin="61,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Height="38" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
+        <TextBlock x:Name="resultOutput" TextWrapping="Wrap" Padding="6" Margin="401,108,64,0" Background="White" TextAlignment="Center" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="18" />
 
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="401,200,64,82" FontFamily="Cascadia Code">
-            <TextBlock x:Name="outputBlock" Padding="12" TextWrapping="Wrap" Height="auto" Width="337" Background="White" FontSize="16" FontFamily="Cascadia Code"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="401,186,64,96" FontFamily="Cascadia Code">
+            <TextBlock x:Name="outputBlock" Padding="12" TextWrapping="Wrap" Width="337" Background="White" FontSize="16" FontFamily="Cascadia Code"/>
         </ScrollViewer>
 
 
-        <Button Content="送出" HorizontalAlignment="Left" Margin="61,297,0,0" VerticalAlignment="Top" Height="37" Width="314" FontSize="20" Click="buttonClick" FontFamily="Cascadia Code"/>
+        <Button Content="送出" HorizontalAlignment="Left" Margin="61,283,0,0" VerticalAlignment="Top" Height="37" Width="314" FontSize="20" Click="buttonClick" FontFamily="Cascadia Code" Background="#FFF4FDFF"/>
+        <TextBlock HorizontalAlignment="Left" Margin="86,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontFamily="Cascadia Code SemiBold"><Run Language="zh-tw" Text="請輸入三角形的三個邊長"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="508,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontFamily="Cascadia Code SemiBold"><Run Language="zh-tw" Text="三角形判斷"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="472,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontFamily="Cascadia Code SemiBold"><Run Language="zh-tw" Text="歷年來三角形判斷"/></TextBlock>
 
     </Grid>
 </Window>

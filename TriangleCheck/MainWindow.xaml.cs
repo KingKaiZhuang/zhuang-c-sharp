@@ -46,7 +46,7 @@ namespace TriangleCheck
             outputBlock.Text = "";
             if (success1 && success2 && success3)
             {
-                if (number1 > 0 && number2 > 0 && number3 > 0 && number1 + number2 > number3 && number1 + number2 > number3 && number1 + number2 > number3)
+                if (number1 > 0 && number2 > 0 && number3 > 0 && number1 + number2 > number3 && number2 + number3 > number1 && number1 + number3 > number2)
                 {
                     triangles.Add(new Triangle { side1 = number1, side2 = number2, side3 = number3, message = "可以形成三角形!" });
                     resultOutput.Background = Brushes.Green;
