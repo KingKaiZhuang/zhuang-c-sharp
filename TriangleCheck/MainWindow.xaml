@@ -10,7 +10,7 @@
         <TextBox x:Name="triangleInput1" HorizontalAlignment="Left" Margin="60,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Height="37" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
         <TextBox x:Name="triangleInput2" HorizontalAlignment="Left" Margin="60,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="39" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
         <TextBox x:Name="triangleInput3" HorizontalAlignment="Left" Margin="61,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Height="38" TextChanged="TextBox_TextChanged" Background="#FFE4E4E4" FontFamily="Cascadia Code" FontSize="22"/>
-        <TextBlock x:Name="resultOutput" TextWrapping="Wrap" Margin="402,127,63,0" Background="White" TextAlignment="Center" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="18" />
+        <TextBlock x:Name="resultOutput" TextWrapping="Wrap" Padding="6" Margin="404,124,61,0" Background="White" TextAlignment="Center" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="18" />
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="401,200,64,82" FontFamily="Cascadia Code">
             <TextBlock x:Name="outputBlock" Padding="12" TextWrapping="Wrap" Height="auto" Width="337" Background="White" FontSize="16" FontFamily="Cascadia Code"/>
