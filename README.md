@@ -4,7 +4,7 @@
 
 ## 學習資源
 
-1. [C# 點餐系統]([link_to_basic_tutorial.md](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/orderDrink))
+1. [C# 點餐系統]([link_to_basic_tutorial.md](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/orderDrink)])
 2. [C# 質數與倍數]([link_to_advanced_tutorial.md](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/WpfApp1))
 3. [C# 三角形的判斷]([link_to_sample_project.md](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/TriangleCheck))
 
