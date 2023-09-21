@@ -33,26 +33,35 @@ namespace TriangleCheck
 
         private void buttonClick(object sender, RoutedEventArgs e)
         {
+            isTriangle();
+        }
+
+        private void isTriangle()
+        {
             double number1, number2, number3;
             bool success1 = double.TryParse(triangleInput1.Text, out number1);
             bool success2 = double.TryParse(triangleInput2.Text, out number2);
             bool success3 = double.TryParse(triangleInput3.Text, out number3);
-            if (success1 && success2 && success3 && number1 > 0 && number2 > 0 && number3 > 0) {
-                if(number1 + number2 > number3 && number1 + number3 > number2 && number2 + number3 > number1)
+            if (success1 && success2 && success3)
+            {
+                if (number1 > 0 && number2 > 0 && number3 > 0 && number1 + number2 > number3 && number1 + number2 > number3 && number1 + number2 > number3)
                 {
+                    Triangle triangle = new Triangle(number1,number2,number3);
+                    triangles.Add(triangle);
                     outputBlock.Text += $"{number1}、{number2}、{number3} 可以形成三角形!\n";
-                    outputBlock.Background = Brushes.Green;
-                    triangles.Add(new Triangle { side1 = number1 , side2 = number2 , side3 = number3 });
+                    triangles.Add(new Triangle { side1 = number1, side2 = number2, side3 = number3 });
+                    resultOutput.Background = Brushes.Green;
                     resultOutput.Text = $"{number1}、{number2}、{number3} 可以形成三角形!\n";
                 }
                 else
                 {
                     outputBlock.Text += $"{number1}、{number2}、{number3} 無法形成三角形!\n";
-                    outputBlock.Background = Brushes.Red;
                     triangles.Add(new Triangle { side1 = number1, side2 = number2, side3 = number3 });
+                    resultOutput.Background = Brushes.Red;
                     resultOutput.Text = $"{number1}、{number2}、{number3} 無法形成三角形!\n";
                 }
-            } else
+            }
+            else
             {
                 MessageBox.Show("請輸入大於0的數字哦!");
             }
