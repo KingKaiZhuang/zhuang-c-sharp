@@ -42,7 +42,7 @@ namespace WpfApp2
                 MessageBox.Show($"輸入數值為{number}，以下是他的質數跟倍數~");
                 for(int i = 2;i < number;i++)
                 {
-                    if (isPrime(number))
+                    if (isPrime(i))
                     {
                         primes.Add(i);
                     }
@@ -54,7 +54,23 @@ namespace WpfApp2
         private void ListPrimePrint(List<int> primes, int number)
         {
             string primeList = $"小於{number}的質數 : ";
-            string primeMultiple = $"小於{number}的倍數 :";
+            string primeMultiple = "";
+            foreach(int p in primes)
+            {
+                primeList += $"{p}";
+                primeMultiple += $"{p}的倍數為:";
+                int i = 1;
+                while(p*i <= number)
+                {
+                    primeMultiple += $"{p * i}";
+                    i++;
+                }
+                primeMultiple += "\n";
+            }
+            textblock_prime.Text = primeList;
+            textBlock_multiple.Text = primeMultiple;
+
+
         }
 
         private bool isPrime(int p)

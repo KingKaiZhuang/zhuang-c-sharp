@@ -6,12 +6,17 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="657,15,0,0" VerticalAlignment="Top" Height="39" Width="109" Click="Button1_Click"/>
+    <Grid Background="#FFECFAFF">
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="620,26,0,0" VerticalAlignment="Top" Height="33" Width="99" Click="Button1_Click"/>
         <TextBox x:Name="Text_item" HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="404" Height="33" Background="White"/>
-        <Label Content="請輸入整數n?" HorizontalAlignment="Left" Margin="25,22,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Yu Gothic UI Semibold"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="638" Background="#FFDADADA"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="301" Width="638" Background="#FFD6D6D6"/>
+        <Label Content="輸入整數" HorizontalAlignment="Left" Margin="81,21,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Yu Gothic UI Semibold" Height="38" Width="107" RenderTransformOrigin="0.523,0.536"/>
 
+        <!-- 在這個 ScrollViewer 中包裝 TextBlock -->
+
+        <TextBlock x:Name="textBlock_multiple" HorizontalAlignment="Center" Margin="0,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="301" Width="638" Background="#FFD6D6D6" FontSize="20"/>
+
+        <TextBlock x:Name="textblock_prime" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="638" Background="#FFDDDDDD" Margin="0,69,0,0" FontSize="20"><Run Language="zh-tw"/></TextBlock>
     </Grid>
+
+
 </Window>
