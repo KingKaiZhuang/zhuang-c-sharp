@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zhuang\\Documents\\zhuang-c-sharp\\orderPractice\\orderPractice.csproj",
+      "projectUniqueName": "C:\\important\\zhuang-c-sharp\\orderPractice\\orderPractice.csproj",
       "projectName": "orderPractice",
-      "projectPath": "C:\\Users\\zhuang\\Documents\\zhuang-c-sharp\\orderPractice\\orderPractice.csproj",
+      "projectPath": "C:\\important\\zhuang-c-sharp\\orderPractice\\orderPractice.csproj",
       "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zhuang\\Documents\\zhuang-c-sharp\\orderPractice\\obj\\",
+      "outputPath": "C:\\important\\zhuang-c-sharp\\orderPractice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

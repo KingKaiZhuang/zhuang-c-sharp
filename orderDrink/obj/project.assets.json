@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zhuang\\Documents\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+      "projectUniqueName": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
       "projectName": "orderDrink",
-      "projectPath": "C:\\Users\\zhuang\\Documents\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+      "projectPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
       "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zhuang\\Documents\\zhuang-c-sharp\\orderDrink\\obj\\",
+      "outputPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
