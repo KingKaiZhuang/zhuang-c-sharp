@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{7A1C006C-3F64-4E0E-93CC-DBF900C6063B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleCheck", "TriangleCheck\TriangleCheck.csproj", "{D44D6D32-367F-452C-B4BA-94A3B69C0F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriangleCheck", "TriangleCheck\TriangleCheck.csproj", "{D44D6D32-367F-452C-B4BA-94A3B69C0F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp3_20230923", "WpfApp3_20230923\WpfApp3_20230923.csproj", "{A357B3D9-FC04-489B-BC5D-C53F3EF91262}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D44D6D32-367F-452C-B4BA-94A3B69C0F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D44D6D32-367F-452C-B4BA-94A3B69C0F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D44D6D32-367F-452C-B4BA-94A3B69C0F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A357B3D9-FC04-489B-BC5D-C53F3EF91262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A357B3D9-FC04-489B-BC5D-C53F3EF91262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A357B3D9-FC04-489B-BC5D-C53F3EF91262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A357B3D9-FC04-489B-BC5D-C53F3EF91262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
