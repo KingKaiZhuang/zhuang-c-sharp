@@ -11,7 +11,7 @@
             <ColumnDefinition Width="21*"/>
             <ColumnDefinition Width="29*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="OrderItem" Margin="27,14,274,211" Background="#FFFCFFDF" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" >
+        <StackPanel x:Name="OrderItem" Margin="68,19,233,207" Background="#FFFCFFDF" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" >
             <StackPanel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -51,8 +51,8 @@
                 <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
             </StackPanel>
         </StackPanel>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="235,56,0,0" VerticalAlignment="Top" Height="63" Width="145" Grid.Column="1" Click="OderButton_Click"/>
-        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="28,241,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="176" Width="497" Background="#FFFFBABA" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="275,98,0,0" VerticalAlignment="Top" Height="63" Width="145" Grid.Column="1" Click="OderButton_Click"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="65,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="176" Width="711" Background="#FFFFBABA" Grid.ColumnSpan="2" FontSize="16"/>
 
     </Grid>
 </Window>
