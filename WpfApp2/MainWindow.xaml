@@ -6,23 +6,45 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FFECFAFF">
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="620,26,0,0" VerticalAlignment="Top" Height="33" Width="99" Click="Button1_Click"/>
-        <TextBox x:Name="Text_item" HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="404" Height="33" Background="White"/>
-<<<<<<< HEAD
-        <Label Content="輸入整數" HorizontalAlignment="Left" Margin="81,21,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Yu Gothic UI Semibold" Height="38" Width="107" RenderTransformOrigin="0.523,0.536"/>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="OrderItem" Margin="25,16,345,261" Background="#FFFCFFDF" Grid.ColumnSpan="2" >
+            <StackPanel Orientation="Horizontal">
+                <Label Width="165" Content="紅茶大杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
+                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
+                <TextBox Width="100" TextChanged="TextBox_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="165" Content="紅茶小杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
+                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
+                <TextBox Width="100" TextChanged="TextBox_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="165" Content="綠茶大杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
+                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
+                <TextBox Width="100" TextChanged="TextBox_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="165" Content="綠茶小杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
+                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
+                <TextBox Width="100" TextChanged="TextBox_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="165" Content="咖啡大杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
+                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
+                <TextBox Width="100" TextChanged="TextBox_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="165" Content="咖啡小杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
+                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
+                <TextBox Width="100" TextChanged="TextBox_TextChanged"/>
+            </StackPanel>
+        </StackPanel>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="235,56,0,0" VerticalAlignment="Top" Height="63" Width="145" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,229,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="188" Width="411" Background="#FFFFBABA" Grid.ColumnSpan="2"/>
 
-        <!-- 在這個 ScrollViewer 中包裝 TextBlock -->
-
-        <TextBlock x:Name="textBlock_multiple" HorizontalAlignment="Center" Margin="0,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="301" Width="638" Background="#FFD6D6D6" FontSize="20"/>
-
-        <TextBlock x:Name="textblock_prime" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="638" Background="#FFDDDDDD" Margin="0,69,0,0" FontSize="20"><Run Language="zh-tw"/></TextBlock>
-=======
-        <Label Content="請輸入整數n?" HorizontalAlignment="Left" Margin="25,22,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Yu Gothic UI Semibold"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="638" Background="#FFDADADA"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="301" Width="638" Background="#FFD6D6D6"/>
->>>>>>> a04e2f81600d7cf548336604bd2f309943f7556d
     </Grid>
-
-
 </Window>
