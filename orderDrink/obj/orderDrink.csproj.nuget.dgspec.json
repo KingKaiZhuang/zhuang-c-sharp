@@ -1,37 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {}
+    "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {}
   },
   "projects": {
-    "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
+    "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+        "projectUniqueName": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
         "projectName": "orderDrink",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
-        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\obj\\",
-=======
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {}
-  },
-  "projects": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
-        "projectName": "orderDrink",
-        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
-        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
-        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\obj\\",
->>>>>>> ad4addf0e4c660b636ededa476916dbd2926ee03
+        "projectPath": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+        "packagesPath": "C:\\Users\\STUST\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\orderDrink\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\STUST\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

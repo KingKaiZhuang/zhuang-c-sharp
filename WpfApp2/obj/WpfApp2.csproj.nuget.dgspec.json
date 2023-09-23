@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\important\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj": {}
+    "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj": {}
   },
   "projects": {
-    "C:\\important\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj": {
+    "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj",
+        "projectUniqueName": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj",
         "projectName": "WpfApp2",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj",
-        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\WpfApp2\\obj\\",
+        "projectPath": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj",
+        "packagesPath": "C:\\Users\\STUST\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\WpfApp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\STUST\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -11,7 +11,7 @@
             <ColumnDefinition Width="21*"/>
             <ColumnDefinition Width="29*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="OrderItem" Margin="68,19,233,207" Background="#FFFCFFDF" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" >
+        <StackPanel x:Name="OrderItem" Margin="68,48,233,229" Background="#FFFCFFDF" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" >
             <StackPanel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

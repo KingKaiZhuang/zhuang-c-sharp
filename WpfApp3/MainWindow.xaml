@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE6DFFF">
+        <StackPanel Margin="10,10,168,250" Background="#FFFFF6D8">
+            <StackPanel Orientation="Horizontal">
+                <Label Width="200" Content="大杯紅茶" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+                <Label Width="200" Content="60元" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" Foreground="#FFEA3333" />
+                <TextBox x:Name="textBlock" Width="160" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" TextChanged="textBlock_change" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="200" Content="小杯紅茶" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+                <Label Width="200" Content="40元" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" Foreground="#FFEA3333" />
+                <TextBox Width="160" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="200" Content="大杯綠茶" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+                <Label Width="200" Content="60元" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" Foreground="#FFEA3333" />
+                <TextBox Width="160" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="200" Content="小杯綠茶" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+                <Label Width="200" Content="40元" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" Foreground="#FFEA3333" />
+                <TextBox Width="160" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="200" Content="大杯咖啡" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+                <Label Width="200" Content="80元" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" Foreground="#FFEA3333" />
+                <TextBox Width="160" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="200" Content="小杯咖啡" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+                <Label Width="200" Content="50元" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" Foreground="#FFEA3333" />
+                <TextBox Width="160" FontWeight="Bold" FontFamily="Cascadia Code" FontSize="16" />
+            </StackPanel>
+        </StackPanel>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="675,193,0,0" VerticalAlignment="Top" Height="38" Width="78" Click="OderButton"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="193" Width="622" Background="#FFE2E2E2"/>
+
+    </Grid>
+</Window>
