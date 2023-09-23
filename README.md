@@ -4,19 +4,15 @@
 
 ## 學習資源
 
-1. [C# 基礎教程](link_to_basic_tutorial.md) - 開始學習 C# 的基本概念。
-2. [C# 進階教程](link_to_advanced_tutorial.md) - 深入了解 C# 的高級主題。
-3. [C# 範例專案](link_to_sample_project.md) - 查看示例專案以學習如何應用 C#。
+1. [C# 點餐系統](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/orderDrink)
+2. [C# 質數與倍數](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/WpfApp1)
+3. [C# 三角形的判斷](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/TriangleCheck)
 
 ## 常見問題
 
 ### Q: 如何安裝 C# 開發環境？
 
 A: 您可以下載並安裝 Visual Studio 或 Visual Studio Code，這些都是流行的 C# 開發工具。
-
-### Q: 如何開始我的第一個 C# 專案？
-
-A: 可以參考我們的[C# 基礎教程](link_to_basic_tutorial.md)，其中有詳細的步驟和示例。
 
 ## 貢獻
 
