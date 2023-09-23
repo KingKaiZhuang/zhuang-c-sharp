@@ -51,8 +51,8 @@
                 <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
             </StackPanel>
         </StackPanel>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="235,56,0,0" VerticalAlignment="Top" Height="63" Width="145" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="28,229,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="188" Width="411" Background="#FFFFBABA" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="235,56,0,0" VerticalAlignment="Top" Height="63" Width="145" Grid.Column="1" Click="OderButton_Click"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="28,241,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="176" Width="497" Background="#FFFFBABA" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
