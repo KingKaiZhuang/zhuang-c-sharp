@@ -20,9 +20,23 @@ namespace WpfApp2
     /// </summary>
     public partial class MainWindow : Window
     {
+        Dictionary<string,int> drinks = new Dictionary<string,int>();
+        Dictionary<string,int> orders = new Dictionary<string,int>();
         public MainWindow()
         {
             InitializeComponent();
+            AddNewDrink(drinks);
+        }
+
+        private void AddNewDrink(Dictionary<string, int> mydrinks)
+        {
+            mydrinks.Add("紅茶大杯", 60);
+            mydrinks.Add("紅茶小杯", 60);
+            mydrinks.Add("綠茶大杯", 60);
+            mydrinks.Add("綠茶小杯", 60);
+            mydrinks.Add("咖啡大杯", 60);
+            mydrinks.Add("咖啡小杯", 60);
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -36,10 +50,13 @@ namespace WpfApp2
             }else if(amount <= 0)
             {
                 MessageBox.Show("請輸入正整數", "輸入錯誤");
-            }
-            else
+            }else
             {
-
+                StackPanel targetStackPanel = targetTextBox.Parent as StackPanel;
+                Label targetLabel = targetStackPanel.Children[0] as Label;
+                String drinkName = targetLabel.Content.ToString();
+                if(orders.ContainsKey(drinkName)) orders.Remove(drinkName);
+                orders.Add(drinkName, amount);
             }
         }
     }
