@@ -11,48 +11,9 @@
             <ColumnDefinition Width="21*"/>
             <ColumnDefinition Width="29*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="OrderItem" Margin="68,48,233,229" Background="#FFFCFFDF" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" >
-            <StackPanel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="-0.445"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-0.659"/>
-                </TransformGroup>
-            </StackPanel.RenderTransform>
-            <StackPanel Orientation="Horizontal">
-                <Label Width="165" Content="紅茶大杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
-                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
-                <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Width="165" Content="紅茶小杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
-                <Label Width="165" Content="40元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
-                <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Width="165" Content="綠茶大杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
-                <Label Width="165" Content="60元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
-                <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Width="165" Content="綠茶小杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
-                <Label Width="165" Content="40元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
-                <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Width="165" Content="咖啡大杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
-                <Label Width="165" Content="80元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
-                <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Width="165" Content="咖啡小杯" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
-                <Label Width="165" Content="50元" FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code" Foreground="#FFFF8787"/>
-                <TextBox Width="100" TextChanged="TextBox_TextChanged" FontSize="18" TextAlignment="Right"/>
-            </StackPanel>
-        </StackPanel>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="275,98,0,0" VerticalAlignment="Top" Height="63" Width="145" Grid.Column="1" Click="OderButton_Click"/>
-        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="65,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="176" Width="711" Background="#FFFFBABA" Grid.ColumnSpan="2" FontSize="16"/>
+        <StackPanel x:Name="stackpanel_DrinkMenu" Margin="42,28,0,0" Background="#FFFAF7EB" HorizontalAlignment="Left" Width="588" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="355,119,0,0" VerticalAlignment="Top" Height="42" Width="89" Grid.Column="1" Click="OderButton_Click"/>
+        <TextBlock x:Name="TextBlock1"  HorizontalAlignment="Left" Margin="42,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="127" Width="588" Background="#FFFFBABA" Grid.ColumnSpan="2" FontSize="16"/>
 
     </Grid>
 </Window>
