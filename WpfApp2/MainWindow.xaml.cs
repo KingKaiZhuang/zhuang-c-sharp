@@ -23,16 +23,57 @@ namespace WpfApp2
         {
             InitializeComponent();
             AddNewDrink(drinks);
+            // 顯示飲料品項菜單
+            DisplayDrinkMenu(drinks);
         }
 
-        private void AddNewDrink(Dictionary<string, int> mydrinks)
+        private void DisplayDrinkMenu(Dictionary<string, int> myDrinks)
         {
-            mydrinks.Add("紅茶大杯", 60);
-            mydrinks.Add("紅茶小杯", 60);
-            mydrinks.Add("綠茶大杯", 60);
-            mydrinks.Add("綠茶小杯", 60);
-            mydrinks.Add("咖啡大杯", 60);
-            mydrinks.Add("咖啡小杯", 60);
+            foreach (var drink in myDrinks)
+            {
+                StackPanel sp = new StackPanel();
+                sp.Orientation = Orientation.Horizontal;
+
+                CheckBox cb = new CheckBox();
+
+                cb.Content = $"{drink.Key} : {drink.Value}元";
+                cb.Width = 200;
+                cb.FontFamily = new FontFamily("Consoles");
+                cb.FontSize = 18;
+                cb.Margin = new Thickness(5);
+                
+                Slider sl = new Slider();
+                sl.Width = 100;
+                sl.Value = 0;
+                sl.Minimum = 0;
+                sl.Maximum = 10;
+
+                Label lb = new Label();
+                lb.Width = 50;
+                lb.Content = "0";
+                lb.FontFamily = new FontFamily("Consoles");
+                lb.FontSize = 18;
+                lb.Foreground = Brushes.Red;
+
+                sp.Children.Add(sl);
+                sp.Children.Add(lb);
+                sp.Children.Add(cb);
+
+                stackpanel_DrinkMenu.Children.Add(sp);
+            }
+            
+        }
+
+        private void AddNewDrink(Dictionary<string, int> myDrinks)
+        {
+            myDrinks.Add("紅茶大杯", 60);
+            myDrinks.Add("紅茶小杯", 40);
+            myDrinks.Add("綠茶大杯", 60);
+            myDrinks.Add("綠茶小杯", 40);
+            myDrinks.Add("咖啡大杯", 80);
+            myDrinks.Add("咖啡小杯", 50);
+            myDrinks.Add("可樂大杯", 40);
+            myDrinks.Add("可樂小杯", 20);
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
