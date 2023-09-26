@@ -32,7 +32,7 @@ namespace WpfApp2
 
         private void DisplayDrinkMenu(Dictionary<string, int> myDrinks)
         {
-            foreach(var drink in myDrinks)
+            foreach (var drink in myDrinks)
             {
                 StackPanel sp = new StackPanel();
                 CheckBox cb = new CheckBox();
@@ -70,7 +70,7 @@ namespace WpfApp2
 
                 stackpanel_DrinkMenu.Children.Add(sp);
             }
-            
+
         }
 
         private void AddNewDrink(Dictionary<string, int> myDrinks)
@@ -89,14 +89,14 @@ namespace WpfApp2
             bool success = int.TryParse(targetTextBox.Text, out int amount);
 
             if (!success) MessageBox.Show("請輸入整數", "輸入錯誤");
-            else if(amount <= 0) MessageBox.Show("請輸入正整數", "輸入錯誤");
+            else if (amount <= 0) MessageBox.Show("請輸入正整數", "輸入錯誤");
             else
             {
                 var targetStackPanel = targetTextBox.Parent as StackPanel;
                 var targetLabel = targetStackPanel.Children[0] as Label;
                 string drinkName = targetLabel.Content.ToString();
 
-                if(order.ContainsKey(drinkName)) order.Remove(drinkName);
+                if (order.ContainsKey(drinkName)) order.Remove(drinkName);
                 order.Add(drinkName, amount);
             }
         }
@@ -108,7 +108,7 @@ namespace WpfApp2
             string discountMessage = "";
             string displayMessage = "訂購清單如下：\n";
 
-            foreach(var item in order)
+            foreach (var item in order)
             {
                 string drinkName = item.Key;
                 int quantity = order[drinkName];
