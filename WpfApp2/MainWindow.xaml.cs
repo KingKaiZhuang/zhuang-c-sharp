@@ -64,6 +64,7 @@ namespace WpfApp2
                 sp.Children.Add(sl);
                 sp.Children.Add(lb);
 
+                // 資料繫結
                 Binding myBinding = new Binding("Value");
                 myBinding.Source = sl;
                 lb.SetBinding(ContentProperty, myBinding);
@@ -83,26 +84,10 @@ namespace WpfApp2
             myDrinks.Add("咖啡小杯", 60);
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            var targetTextBox = sender as TextBox;
-            bool success = int.TryParse(targetTextBox.Text, out int amount);
-
-            if (!success) MessageBox.Show("請輸入整數", "輸入錯誤");
-            else if (amount <= 0) MessageBox.Show("請輸入正整數", "輸入錯誤");
-            else
-            {
-                var targetStackPanel = targetTextBox.Parent as StackPanel;
-                var targetLabel = targetStackPanel.Children[0] as Label;
-                string drinkName = targetLabel.Content.ToString();
-
-                if (order.ContainsKey(drinkName)) order.Remove(drinkName);
-                order.Add(drinkName, amount);
-            }
-        }
-
         private void OrderButton_Click(object sender, RoutedEventArgs e)
         {
+            PlaceOrder(order);
+
             double total = 0.0;
             double sellPrice = 0.0;
             string discountMessage = "";
@@ -141,6 +126,24 @@ namespace WpfApp2
 
             displayMessage += $"本次訂購總共{order.Count}項，總共{total}元，{discountMessage}，售價{sellPrice}元。\n";
             textblock1.Text = displayMessage;
+        }
+
+        private void PlaceOrder(Dictionary<string, int> myOrders)
+        {
+            myOrders.Clear();
+            for(int i = 0; i < stackpanel_DrinkMenu.Children.Count; i++)
+            {
+                StackPanel sp = stackpanel_DrinkMenu.Children[i] as StackPanel;
+                CheckBox cb = sp.Children[0] as CheckBox;
+                Slider sl = sp.Children[1] as Slider;
+                string drinkName = cb.Content.ToString().Substring(0,4);
+                int quantity = Convert.ToInt32(sl.Value);
+
+                if(cb.IsChecked == true && quantity != 0)
+                {
+                    myOrders.Add(drinkName,quantity);
+                }
+            }
         }
     }
 }
