@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="624" Width="800">
     <Grid>
-        <StackPanel x:Name="stackpanel_DrinkMenu" Background="#FFF7E9E9" Margin="50,28,150,0" VerticalAlignment="Top"/>
+        <GroupBox Header="內用/外帶" Margin="0,2,0,550" HorizontalAlignment="Left" Width="615" BorderBrush="#FF898989" Background="#FFF7F7E6">
+            <StackPanel Height="37" Orientation="Horizontal">
+                <RadioButton x:Name="RadioButton1" Content="內用" IsChecked="True" FontSize="18" VerticalContentAlignment="Center" Checked="RadioButton_check" Width="100" Height="40"/>
+                <RadioButton x:Name="RadioButton2" Content="內用" FontSize="18" VerticalContentAlignment="Center" Checked="RadioButton_check" Width="100" Height="40"/>
+            </StackPanel>
+        </GroupBox>
+        <StackPanel x:Name="stackpanel_DrinkMenu" Background="#FFF7E9E9" Margin="19,69,181,0" VerticalAlignment="Top"/>
 
         <Button x:Name="OrderButton" Content="訂購" HorizontalAlignment="Left" Margin="663,130,0,0" VerticalAlignment="Top" Height="56" Width="127" FontSize="16" Click="OrderButton_Click" />
 

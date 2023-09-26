@@ -23,6 +23,7 @@ namespace WpfApp2
     {
         Dictionary<string, int> drinks = new Dictionary<string, int>();
         Dictionary<string, int> order = new Dictionary<string, int>();
+        string check = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -144,6 +145,12 @@ namespace WpfApp2
                     myOrders.Add(drinkName,quantity);
                 }
             }
+        }
+
+        private void RadioButton_check(object sender, RoutedEventArgs e)
+        {
+            var rb = sender as RadioButton;
+            if (rb != null) check = rb.Content.ToString();
         }
     }
 }
