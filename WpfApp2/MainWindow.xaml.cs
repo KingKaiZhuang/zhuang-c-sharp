@@ -92,7 +92,7 @@ namespace WpfApp2
             double total = 0.0;
             double sellPrice = 0.0;
             string discountMessage = "";
-            string displayMessage = "訂購清單如下：\n";
+            string displayMessage = $"{check}訂購清單如下：\n";
 
             foreach (var item in order)
             {
