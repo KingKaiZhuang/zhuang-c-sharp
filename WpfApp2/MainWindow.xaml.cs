@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -29,11 +30,46 @@ namespace WpfApp2
             DisplayDrinkMenu(drinks);
         }
 
-        private void DisplayDrinkMenu(Dictionary<string, int> drinks)
+        private void DisplayDrinkMenu(Dictionary<string, int> myDrinks)
         {
-            StackPanel sp = new StackPanel();
-            CheckBox cb = new CheckBox();
-            Slider s1 = new Slider();
+            foreach(var drink in myDrinks)
+            {
+                StackPanel sp = new StackPanel();
+                CheckBox cb = new CheckBox();
+                Slider sl = new Slider();
+                Label lb = new Label();
+
+                cb.Content = $"{drink.Key} : {drink.Value}";
+                cb.FontFamily = new FontFamily("Consolas");
+                cb.FontSize = 18;
+                cb.Foreground = Brushes.Blue;
+                cb.Width = 200;
+                cb.Margin = new Thickness(5);
+
+                sl.Width = 100;
+                sl.Value = 0;
+                sl.Minimum = 0;
+                sl.Maximum = 10;
+                sl.IsSnapToTickEnabled = true;
+                sl.TickPlacement = TickPlacement.BottomRight;
+
+                lb.Width = 50;
+                lb.Content = "0";
+                lb.FontFamily = new FontFamily("Consolas");
+                lb.FontSize = 18;
+
+                sp.Orientation = Orientation.Horizontal;
+                sp.Margin = new Thickness(5);
+                sp.Children.Add(cb);
+                sp.Children.Add(sl);
+                sp.Children.Add(lb);
+
+                Binding myBinding = new Binding("Value");
+                myBinding.Source = sl;
+                lb.SetBinding(ContentProperty, myBinding);
+
+                stackpanel_DrinkMenu.Children.Add(sp);
+            }
             
         }
 
@@ -63,7 +99,6 @@ namespace WpfApp2
                 if(order.ContainsKey(drinkName)) order.Remove(drinkName);
                 order.Add(drinkName, amount);
             }
-
         }
 
         private void OrderButton_Click(object sender, RoutedEventArgs e)
