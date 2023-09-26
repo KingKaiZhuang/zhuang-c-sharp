@@ -26,6 +26,15 @@ namespace WpfApp2
         {
             InitializeComponent();
             AddNewDrink(drinks);
+            DisplayDrinkMenu(drinks);
+        }
+
+        private void DisplayDrinkMenu(Dictionary<string, int> drinks)
+        {
+            StackPanel sp = new StackPanel();
+            CheckBox cb = new CheckBox();
+            Slider s1 = new Slider();
+            
         }
 
         private void AddNewDrink(Dictionary<string, int> myDrinks)
