@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriangleCheck", "TriangleCh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{05F21B33-51BA-41D0-AF59-222672A3C1C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20230927", "20230927\20230927.csproj", "{62028CAB-CAE7-4AA0-9263-032070F95503}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62028CAB-CAE7-4AA0-9263-032070F95503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62028CAB-CAE7-4AA0-9263-032070F95503}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62028CAB-CAE7-4AA0-9263-032070F95503}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62028CAB-CAE7-4AA0-9263-032070F95503}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
