@@ -17,7 +17,7 @@
         <Button x:Name="OrderButton" Content="訂購" Margin="664,184,41,214" Click="OrderButton_Click" />
         
         <ScrollViewer Margin="10,79,173,108">
-            <StackPanel x:Name="stackpanel_DrinkMenu"  Background="#FFE7E3FF" />
+            <StackPanel x:Name="stackpanel_DrinkMenu"  Background="#FFE7E3FF" VerticalAlignment="Top" />
         </ScrollViewer>
         
         <ScrollViewer Margin="10,341,173,10">

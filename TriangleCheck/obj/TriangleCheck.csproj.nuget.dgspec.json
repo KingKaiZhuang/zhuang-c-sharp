@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj": {}
+    "C:\\important\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj": {}
   },
   "projects": {
-    "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj": {
+    "C:\\important\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj",
+        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj",
         "projectName": "TriangleCheck",
-        "projectPath": "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj",
-        "packagesPath": "C:\\Users\\owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\TriangleCheck\\obj\\",
+        "projectPath": "C:\\important\\zhuang-c-sharp\\TriangleCheck\\TriangleCheck.csproj",
+        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
+        "outputPath": "C:\\important\\zhuang-c-sharp\\TriangleCheck\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

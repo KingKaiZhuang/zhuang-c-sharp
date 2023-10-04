@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj": {}
+    "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj": {}
   },
   "projects": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj": {
+    "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj",
+        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj",
         "projectName": "20231005",
-        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj",
-        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
-        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\obj\\",
+        "projectPath": "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj",
+        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
+        "outputPath": "C:\\important\\zhuang-c-sharp\\20231005\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

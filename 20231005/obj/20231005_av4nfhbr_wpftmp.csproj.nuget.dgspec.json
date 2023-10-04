@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\important\\zhuang-c-sharp\\20230927\\20230927.csproj": {}
+    "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj": {}
   },
   "projects": {
-    "C:\\important\\zhuang-c-sharp\\20230927\\20230927.csproj": {
+    "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\20230927\\20230927.csproj",
-        "projectName": "20230927",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\20230927\\20230927.csproj",
+        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj",
+        "projectName": "20231005",
+        "projectPath": "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj",
         "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\20230927\\obj\\",
+        "outputPath": "C:\\important\\zhuang-c-sharp\\20231005\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
