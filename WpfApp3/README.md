@@ -1,4 +1,4 @@
-**成員變數和建構函數**：
+![image](\images\mainwindow.png)
 
 ```csharp
 string takeout = "";
