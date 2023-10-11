@@ -7,7 +7,7 @@
 1. [C# 點餐系統](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/orderDrink)
 2. [C# 質數與倍數](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/WpfApp1)
 3. [C# 三角形的判斷](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/TriangleCheck)
-4. [C# 進階動態點猜系統](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/WpfApp3)
+4. [C# 進階動態點餐系統](https://github.com/KingKaiZhuang/zhuang-c-sharp/tree/master/WpfApp3)
 
 ## 常見問題
 
