@@ -1,4 +1,4 @@
-![image](\images\mainwindow.png)
+![image](images\mainwindow.png)
 
 ```csharp
 string takeout = "";
