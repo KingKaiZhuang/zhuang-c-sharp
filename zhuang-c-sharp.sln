@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp2", "WpfApp2\WpfApp2.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20231005", "20231005\20231005.csproj", "{16961C6E-72B5-4E03-9546-8C67F2E6ED57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp3", "WpfApp3\WpfApp3.csproj", "{A96F8A2C-3182-4B1B-9286-E457EC4DA700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dynamicMenu", "WpfApp3\dynamicMenu.csproj", "{A96F8A2C-3182-4B1B-9286-E457EC4DA700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
