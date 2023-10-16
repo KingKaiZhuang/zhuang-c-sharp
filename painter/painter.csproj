@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\orderDrink\orderDrink.csproj" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
   </ItemGroup>
 
 </Project>

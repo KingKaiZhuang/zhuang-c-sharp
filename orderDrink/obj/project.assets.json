@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "dynamicMenu/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/dynamicMenu.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/dynamicMenu.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "dynamicMenu/1.0.0": {
+      "type": "project",
+      "path": "../WpfApp3/dynamicMenu.csproj",
+      "msbuildProject": "../WpfApp3/dynamicMenu.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "dynamicMenu >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\zhuang\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
+              "projectPath": "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -70,5 +93,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "專案 dynamicMenu 與 net6.0 (.NETCoreApp,Version=v6.0) 不相容。 專案 dynamicMenu 支援: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "dynamicMenu",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
