@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\important\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj": {}
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj": {}
   },
   "projects": {
-    "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj": {
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj",
+        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj",
         "projectName": "20231005",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj",
-        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\20231005\\obj\\",
+        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj",
+        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
+        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -67,20 +67,20 @@
         }
       }
     },
-    "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
         "projectName": "orderDrink",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
-        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\obj\\",
+        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
+        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
-                "projectPath": "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
+              "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
+                "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
               }
             }
           }
@@ -126,20 +126,20 @@
         }
       }
     },
-    "C:\\important\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj": {
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj",
+        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj",
         "projectName": "PrimeNumber",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj",
-        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\WpfApp1\\obj\\",
+        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj",
+        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
+        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -155,8 +155,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
-                "projectPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj"
+              "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
+                "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj"
               }
             }
           }
@@ -193,20 +193,20 @@
         }
       }
     },
-    "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
+        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
         "projectName": "dynamicMenu",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
-        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\WpfApp3\\obj\\",
+        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
+        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
+        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -222,8 +222,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj": {
-                "projectPath": "C:\\important\\zhuang-c-sharp\\20231005\\20231005.csproj"
+              "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj": {
+                "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj"
               }
             }
           }

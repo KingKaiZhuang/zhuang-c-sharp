@@ -20,9 +20,48 @@ namespace painter
     /// </summary>
     public partial class MainWindow : Window
     {
+        string shapeType;
+        Color strokeColor = Colors.Red;
+        Brush strokeBrush = new SolidColorBrush(Colors.Red);
+        int strokeThickness = 1;
+        Point start, dest;
+
         public MainWindow()
         {
             InitializeComponent();
+            strokeColorPicker.SelectedColor = strokeColor;
+        }
+
+        private void ShapeButton_Click(object sender, RoutedEventArgs e)
+        {
+            var targetRadioButton = sender as RadioButton;
+            shapeType = targetRadioButton.Tag.ToString();
+            MessageBox.Show(shapeType);
+        }
+
+        private void strokeThicknessSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            strokeThickness = Convert.ToInt32(strokeThicknessSlider.Value);
+        }
+
+        private void myCanvas_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void myCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            start = e.GetPosition(myCanvas);
+            myCanvas.Cursor = Cursors.Cross;
+            switch (shapeType)
+            {
+                case "straight":
+                    break;
+                case "Rectangle":
+                    break;
+                case "Ellipse":
+                    break;
+            }
         }
     }
 }

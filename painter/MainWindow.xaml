@@ -18,12 +18,17 @@
             <ToolBarTray DockPanel.Dock="Top" Height="35" Background="#FFDDDDDD">
                 <ToolBar Width="400" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFD2E3FF">
                     <Label Content="筆刷色彩" VerticalAlignment="Center" Width="80" HorizontalContentAlignment="Center" FontSize="12"/>
-                    <xctk:ColorPicker Width="100" DisplayColorAndName="True"/>
-                    <Slider x:Name="strokeThicknessSlider" Width="100" Value="1" Minimum="1" Maximum="10" VerticalAlignment="Center"/>
-                    <Label Content="{Binding Value, ElementName=strokeThicknessSlider}"/>
+                    <xctk:ColorPicker x:Name="strokeColorPicker" Width="100" DisplayColorAndName="True"/>
+                    <Slider x:Name="strokeThicknessSlider" Width="100" Value="1" Minimum="1" Maximum="10" VerticalAlignment="Center" IsSnapToTickEnabled="True" ValueChanged="strokeThicknessSlider_ValueChanged"/>
+                    <Label  FontSize="14" FontWeight="Bold" Content="{Binding Value, ElementName=strokeThicknessSlider}" Width="50" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+                </ToolBar>
+                <ToolBar Width="300" Background="#FFE6FFE3">
+                    <RadioButton Content="直線" Tag="straight" IsChecked="True" FontSize="14" Width="60" Click="ShapeButton_Click"/>
+                    <RadioButton Content="矩形" Tag="rectangle"  FontSize="14" Width="60" Click="ShapeButton_Click"/>
+                    <RadioButton Content="橢圓" Tag="circle"  FontSize="14" Width="60" Click="ShapeButton_Click"/>
                 </ToolBar>
             </ToolBarTray>
-            <Canvas DockPanel.Dock="Top" Height="404" Background="#FFFFFBE2"/>
+            <Canvas x:Name="myCanvas" DockPanel.Dock="Top" Height="404" Background="#FFFFFBE2" MouseLeftButtonDown="Canvas_MouseLeftButtonDown" MouseMove="myCanvas_MouseMove"/>
             <StatusBar Width="959" DockPanel.Dock="Bottom" Height="70"/>
 
         </DockPanel>
