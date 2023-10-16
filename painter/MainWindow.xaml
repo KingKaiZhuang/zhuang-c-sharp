@@ -6,21 +6,26 @@
         xmlns:local="clr-namespace:painter"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="2023 WPF Painter" Height="450" Width="800">
+        Title="WPF 2023 Painter" Height="549" Width="961">
     <Grid>
         <DockPanel LastChildFill="False">
-            <Menu Height="25" DockPanel.Dock="Top">
+            <Menu DockPanel.Dock="Top" Height="25">
                 <MenuItem Header="檔案" VerticalAlignment="Center" >
-                    <MenuItem Header="新畫布"/>
+                    <MenuItem Header="新畫布" />
                 </MenuItem>
-                <MenuItem Header="工具"></MenuItem>
+                <MenuItem Header="工具"/>
             </Menu>
-            <ToolBarTray DockPanel.Dock="Top" Height="50">
-                <ToolBar HorizontalAlignment="Center" VerticalAlignment="Center" Height="48" Width="300">
-                    <Label Content="筆刷色彩" Width="80" VerticalAlignment="Center" FontSize="16"/>
-                    <xctk:ColorPicker Width="150"/>
+            <ToolBarTray DockPanel.Dock="Top" Height="35" Background="#FFDDDDDD">
+                <ToolBar Width="400" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFD2E3FF">
+                    <Label Content="筆刷色彩" VerticalAlignment="Center" Width="80" HorizontalContentAlignment="Center" FontSize="12"/>
+                    <xctk:ColorPicker Width="100" DisplayColorAndName="True"/>
+                    <Slider x:Name="strokeThicknessSlider" Width="100" Value="1" Minimum="1" Maximum="10" VerticalAlignment="Center"/>
+                    <Label Content="{Binding Value, ElementName=strokeThicknessSlider}"/>
                 </ToolBar>
             </ToolBarTray>
+            <Canvas DockPanel.Dock="Top" Height="404" Background="#FFFFFBE2"/>
+            <StatusBar Width="959" DockPanel.Dock="Bottom" Height="70"/>
+
         </DockPanel>
 
     </Grid>
