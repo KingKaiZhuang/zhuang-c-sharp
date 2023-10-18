@@ -13,7 +13,7 @@ namespace painter
     /// </summary>
     public partial class MainWindow : Window
     {
-        string shape = "";
+        string shape = "Line";
         Color strokeColor = Colors.Red;
         int strukeThickness;
         Brush strukeBrush = new SolidColorBrush(Colors.Red);
