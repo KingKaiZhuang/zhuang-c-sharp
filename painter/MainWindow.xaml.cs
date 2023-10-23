@@ -28,7 +28,6 @@ namespace painter
         {
             var shapeChoose = sender as RadioButton;
             shape = shapeChoose.Tag.ToString();
-            MessageBox.Show(shape);
         }
 
         private void colorSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
