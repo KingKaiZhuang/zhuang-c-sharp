@@ -46,7 +46,7 @@ namespace painterDraw
         private void myCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             start = e.GetPosition(myCanvas);
-            myCanvas.Cursor = Cursors.Cross
+            myCanvas.Cursor = Cursors.Cross;
             switch (shapeType)
             {
                 case "Line":
