@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:painterDraw"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="2023 wpf painter" Height="450" Width="800">
+        Title="2023 wpf painter" Height="551" Width="800">
     <Grid>
         <DockPanel LastChildFill="False">
             <Menu Height="25" DockPanel.Dock="Top">
@@ -16,11 +16,20 @@
                 <MenuItem Header="工具" />
             </Menu>
             <ToolBarTray DockPanel.Dock="Top" Height="30">
-                <ToolBar Width="200"  Height="30" HorizontalAlignment="Center">
+                <ToolBar Width="312"  Height="30" HorizontalAlignment="Center">
                     <Label Content="筆刷色彩" />
-                    <xctk:ColorPicker Width="100"/>
+                    <xctk:ColorPicker x:Name="strokeColorPicker" Width="100" DisplayColorAndName="True"/>
+                    <Slider x:Name="strokeThicknessSlider" Width="100" VerticalAlignment="Center" Value="1" IsSnapToTickEnabled="True" ValueChanged="strokeThicknessSlider_ValueChanged" />
+                    <Label Content="{Binding Value, ElementName=strokeThicknessSlider}" Width="30" HorizontalContentAlignment="Center"/>
+                </ToolBar>
+                <ToolBar Width="220">
+                    <RadioButton Content="直線" Tag="Line" IsChecked="True" Click="ShapeButton_Click" Width="60"/>
+                    <RadioButton Content="矩形" Tag="Center" Click="ShapeButton_Click" Width="60"/>
+                    <RadioButton Content="橢圓" Tag="Ellipse" Click="ShapeButton_Click" Width="60"/>
                 </ToolBar>
             </ToolBarTray>
+            <Canvas x:Name="myCanvas" DockPanel.Dock="Top" Height="400" Background="#FFFFFBEC" MouseLeftButtonDown="myCanvas_MouseLeftButtonDown"/>
+            <StatusBar DockPanel.Dock="Bottom" Height="40"/>
         </DockPanel>
 
     </Grid>
