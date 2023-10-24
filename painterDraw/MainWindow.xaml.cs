@@ -20,7 +20,7 @@ namespace painterDraw
     /// </summary>
     public partial class MainWindow : Window
     {
-        string shapeType = "Line";
+        string shapeType = "Line"; // 要有初始值
         int strokeThickness = 1;
         Color strokeColor = Colors.Red;
         Point start, dest;
