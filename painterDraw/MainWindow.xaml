@@ -28,8 +28,10 @@
                     <RadioButton Content="橢圓" Tag="Ellipse" Click="ShapeButton_Click" Width="60"/>
                 </ToolBar>
             </ToolBarTray>
-            <Canvas x:Name="myCanvas" DockPanel.Dock="Top" Height="400" Background="#FFFFFBEC" MouseLeftButtonDown="myCanvas_MouseLeftButtonDown"/>
-            <StatusBar DockPanel.Dock="Bottom" Height="40"/>
+            <Canvas x:Name="myCanvas" DockPanel.Dock="Top" Height="400" Background="#FFFFFBEC" MouseLeftButtonDown="myCanvas_MouseLeftButtonDown" MouseMove="myCanvas_MouseMove" MouseRightButtonUp="myCanvas_MouseRightButtonUp"/>
+            <StatusBar DockPanel.Dock="Bottom" Height="40">
+                <Label x:Name="coordinateLabel" Content="座標" Width="300" Margin="10,0,0,0"></Label>
+            </StatusBar>
         </DockPanel>
 
     </Grid>
