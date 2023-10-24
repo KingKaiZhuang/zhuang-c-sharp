@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace painterDraw
@@ -87,7 +80,21 @@ namespace painterDraw
 
         private void myCanvas_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
+            switch (shapeType)
+            {
+                case "Line":
+                    var line = myCanvas.Children.OfType<Line>().LastOrDefault();
+                    break;
+                case "Rectangle":
+                    break;
+                case "Ellipse":
+                    break;
+            }
+        }
 
+        private void strokeColorPicker_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)
+        {
+            strokeColor = (Color)strokeColorPicker.SelectedColor;
         }
 
         private void DrawLine(Color color, int thickness)

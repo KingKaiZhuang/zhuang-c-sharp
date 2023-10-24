@@ -18,7 +18,7 @@
             <ToolBarTray DockPanel.Dock="Top" Height="30">
                 <ToolBar Width="312"  Height="30" HorizontalAlignment="Center">
                     <Label Content="筆刷色彩" />
-                    <xctk:ColorPicker x:Name="strokeColorPicker" Width="100" DisplayColorAndName="True"/>
+                    <xctk:ColorPicker x:Name="strokeColorPicker" Width="100" DisplayColorAndName="True" SelectedColorChanged="strokeColorPicker_SelectedColorChanged"/>
                     <Slider x:Name="strokeThicknessSlider" Width="100" VerticalAlignment="Center" Value="1" IsSnapToTickEnabled="True" ValueChanged="strokeThicknessSlider_ValueChanged" />
                     <Label Content="{Binding Value, ElementName=strokeThicknessSlider}" Width="30" HorizontalContentAlignment="Center"/>
                 </ToolBar>
