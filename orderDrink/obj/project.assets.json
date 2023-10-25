@@ -5,9 +5,7 @@
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\zhuang\\.nuget\\packages\\": {},
@@ -41,11 +39,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
-              "projectPath": "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -76,16 +70,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "找不到專案 'C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj'。請確定專案參考有效，且該專案檔存在。",
-      "libraryId": "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }
