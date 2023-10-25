@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {}
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {}
   },
   "projects": {
-    "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
         "projectName": "orderDrink",
-        "projectPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
-        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-        "outputPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\obj\\",
+        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
+        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

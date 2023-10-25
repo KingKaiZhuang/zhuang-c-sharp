@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriangleCheck", "TriangleCh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{05F21B33-51BA-41D0-AF59-222672A3C1C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20231005", "20231005\20231005.csproj", "{16961C6E-72B5-4E03-9546-8C67F2E6ED57}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "painterDraw", "painterDraw\painterDraw.csproj", "{B96DC91D-AEB0-4907-9213-6F43FBB28ED0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "painterDraw", "painterDraw\painterDraw.csproj", "{B96DC91D-AEB0-4907-9213-6F43FBB28ED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +35,6 @@ Global
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16961C6E-72B5-4E03-9546-8C67F2E6ED57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16961C6E-72B5-4E03-9546-8C67F2E6ED57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16961C6E-72B5-4E03-9546-8C67F2E6ED57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16961C6E-72B5-4E03-9546-8C67F2E6ED57}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B96DC91D-AEB0-4907-9213-6F43FBB28ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B96DC91D-AEB0-4907-9213-6F43FBB28ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B96DC91D-AEB0-4907-9213-6F43FBB28ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
