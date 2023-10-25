@@ -87,7 +87,45 @@ namespace WpfApp2
 
         private void OrderButton_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< Updated upstream
             PlaceOrder(order);
+=======
+            //將訂購的飲料加入訂單
+            PlaceOrder(orders);
+
+            //顯示訂單內容
+            DisplayOrder(orders);
+
+            // 生成唯一的檔案名稱，例如使用日期和時間
+            string timestamp = DateTime.Now.ToString("yyyyMMddHHmm");
+            string folderPath = "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp2"; // 請將 "YourFolderPath" 替換為目標資料夾的路徑
+            string orderFileName = Path.Combine(folderPath, "Order_" + timestamp + ".txt");
+
+            // 儲存訂單到新的 txt 檔案
+            SaveOrderToFile(orders, orderFileName);
+        }
+
+        private void DisplayOrder(Dictionary<string, int> myOrders)
+        {
+            displayTextBlock.Inlines.Clear();
+            Run titleString = new Run
+            {
+                Text = "您所訂購的飲品為 ",
+                FontSize = 16,
+                Foreground = Brushes.Blue
+            };
+
+            Run takeoutString = new Run
+            {
+                Text = $"{takeout}",
+                FontSize = 16,
+                FontWeight = FontWeights.Bold
+            };
+
+            displayTextBlock.Inlines.Add(titleString);
+            displayTextBlock.Inlines.Add(takeoutString);
+            displayTextBlock.Inlines.Add(new Run() { Text = " ，訂購明細如下: \n", FontSize = 16 });
+>>>>>>> Stashed changes
 
             double total = 0.0;
             double sellPrice = 0.0;
@@ -152,5 +190,32 @@ namespace WpfApp2
             var rb = sender as RadioButton;
             if (rb != null) check = rb.Content.ToString();
         }
+
+        private string orderFilePath = "Order.txt";
+
+        private void SaveOrderToFile(Dictionary<string, int> myOrders, string fileName)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(fileName))
+                {
+                    writer.WriteLine("訂單內容：");
+                    foreach (var item in myOrders)
+                    {
+                        string drinkName = item.Key;
+                        int quantity = myOrders[drinkName];
+                        writer.WriteLine($"{drinkName} X {quantity}杯");
+                    }
+                    writer.Close();
+                }
+                MessageBox.Show("訂單已成功儲存到 " + fileName, "儲存成功");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("儲存訂單時發生錯誤：" + ex.Message, "錯誤");
+            }
+        }
+
+
     }
 }
