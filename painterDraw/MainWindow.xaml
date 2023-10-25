@@ -13,7 +13,9 @@
                 <MenuItem Header="檔案">
                     <MenuItem Header="新增畫布" />
                 </MenuItem>
-                <MenuItem Header="工具" />
+                <MenuItem Header="工具">
+                    <MenuItem Header="清除畫布" Click="MenuItem_Click"/>
+                </MenuItem>
             </Menu>
             <ToolBarTray DockPanel.Dock="Top" Height="30">
                 <ToolBar Width="489"  Height="30" HorizontalAlignment="Center">
@@ -22,7 +24,7 @@
                     <Slider x:Name="strokeThicknessSlider" Width="100" VerticalAlignment="Center" Value="1" IsSnapToTickEnabled="True" ValueChanged="strokeThicknessSlider_ValueChanged" />
                     <Label Content="{Binding Value, ElementName=strokeThicknessSlider}" Width="30" HorizontalContentAlignment="Center"/>
                     <Label Content="筆刷色彩" />
-                    <xctk:ColorPicker x:Name="fillColorPicker" Width="100" DisplayColorAndName="True" SelectedColorChanged="strokeColorPicker_SelectedColorChanged"/>
+                    <xctk:ColorPicker x:Name="fillColorPicker" Width="100" DisplayColorAndName="True" SelectedColorChanged="fillColorPicker_SelectedColorChanged"/>
                 </ToolBar>
                 <ToolBar Width="220">
                     <RadioButton Content="直線" Tag="Line" IsChecked="True" Click="ShapeButton_Click" Width="60"/>
