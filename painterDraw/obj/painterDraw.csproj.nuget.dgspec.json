@@ -1,37 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<<< HEAD:WpfApp2/obj/WpfApp2_a0stbsoo_wpftmp.csproj.nuget.dgspec.json
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj": {}
+    "C:\\important\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj": {}
   },
   "projects": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj": {
+    "C:\\important\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj",
-        "projectName": "WpfApp2",
-        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp2\\WpfApp2.csproj",
-        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
-        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp2\\obj\\",
-========
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj": {}
-  },
-  "projects": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj",
+        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj",
         "projectName": "painterDraw",
-        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj",
-        "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
-        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\obj\\",
->>>>>>>> painterDraw-3:painterDraw/obj/painterDraw.csproj.nuget.dgspec.json
+        "projectPath": "C:\\important\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj",
+        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
+        "outputPath": "C:\\important\\zhuang-c-sharp\\painterDraw\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -58,6 +44,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
