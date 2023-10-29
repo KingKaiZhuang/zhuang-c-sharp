@@ -1,51 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "dynamicMenu/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/dynamicMenu.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/dynamicMenu.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
-      "orderDrink/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "dynamicMenu": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/orderDrink.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/orderDrink.dll": {}
-        }
-      }
-    }
+    "net6.0-windows7.0": {}
   },
-  "libraries": {
-    "dynamicMenu/1.0.0": {
-      "type": "project",
-      "path": "../WpfApp3/dynamicMenu.csproj",
-      "msbuildProject": "../WpfApp3/dynamicMenu.csproj"
-    },
-    "orderDrink/1.0.0": {
-      "type": "project",
-      "path": "../orderDrink/orderDrink.csproj",
-      "msbuildProject": "../orderDrink/orderDrink.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "orderDrink >= 1.0.0"
-    ]
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\pudy6\\.nuget\\packages\\": {},
@@ -54,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj",
-      "projectName": "PrimeNumber",
-      "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\PrimeNumber.csproj",
+      "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\WpfApp1.csproj",
+      "projectName": "WpfApp1",
+      "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\WpfApp1.csproj",
       "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
       "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp1\\obj\\",
       "projectStyle": "PackageReference",
@@ -79,11 +39,7 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj": {
-              "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

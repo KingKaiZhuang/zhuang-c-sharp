@@ -111,12 +111,45 @@ namespace WpfApp2
 
         private void OrderButton_Click(object sender, RoutedEventArgs e)
         {
-            //將訂購的飲料加入訂單
+            // 將訂購的飲料加入訂單
             PlaceOrder(orders);
 
-            //顯示訂單內容
+            // 顯示訂單內容
             DisplayOrder(orders);
+
+            // 生成唯一的檔案名稱，例如使用日期和時間
+            string timestamp = DateTime.Now.ToString("yyyyMMddHHmm");
+            string folderPath = "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp2"; // 請將 "YourFolderPath" 替換為目標資料夾的路徑
+            string orderFileName = Path.Combine(folderPath, "Order_" + timestamp + ".txt");
+
+            // 儲存訂單到新的 txt 檔案
+            SaveOrderToFile(orders, orderFileName);
         }
+
+        private void SaveOrderToFile(Dictionary<string, int> myOrders, string fileName)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(fileName))
+                {
+                    writer.WriteLine("訂單內容：");
+                    foreach (var item in myOrders)
+                    {
+                        string drinkName = item.Key;
+                        int quantity = myOrders[drinkName];
+                        writer.WriteLine($"{drinkName} X {quantity}杯");
+                    }
+                    writer.Close();
+                }
+                MessageBox.Show("訂單已成功儲存到 " + fileName, "儲存成功");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("儲存訂單時發生錯誤：" + ex.Message, "錯誤");
+            }
+        }
+
+
 
         private void DisplayOrder(Dictionary<string, int> myOrders)
         {
