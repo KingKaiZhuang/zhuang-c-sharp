@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\dynamicMenu\\dynamicMenu.csproj": {}
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {}
   },
   "projects": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\dynamicMenu\\dynamicMenu.csproj": {
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\dynamicMenu\\dynamicMenu.csproj",
+        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
         "projectName": "dynamicMenu",
-        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\dynamicMenu\\dynamicMenu.csproj",
+        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
         "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
-        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\dynamicMenu\\obj\\",
+        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

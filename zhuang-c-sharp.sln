@@ -5,13 +5,11 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "orderDrink", "orderDrink\orderDrink.csproj", "{8F0D67A5-CEA7-4734-9574-509B581A99F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumber", "WpfApp1\PrimeNumber.csproj", "{F4A74D27-4BFA-4CCC-834F-D00846A32038}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriangleCheck", "TriangleCheck\TriangleCheck.csproj", "{D44D6D32-367F-452C-B4BA-94A3B69C0F20}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{05F21B33-51BA-41D0-AF59-222672A3C1C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dynamicMenu", "WpfApp3\dynamicMenu.csproj", "{A96F8A2C-3182-4B1B-9286-E457EC4DA700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dynamicMenu", "dynamicMenu\dynamicMenu.csproj", "{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{8F0D67A5-CEA7-4734-9574-509B581A99F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F0D67A5-CEA7-4734-9574-509B581A99F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F0D67A5-CEA7-4734-9574-509B581A99F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4A74D27-4BFA-4CCC-834F-D00846A32038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4A74D27-4BFA-4CCC-834F-D00846A32038}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4A74D27-4BFA-4CCC-834F-D00846A32038}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4A74D27-4BFA-4CCC-834F-D00846A32038}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D44D6D32-367F-452C-B4BA-94A3B69C0F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D44D6D32-367F-452C-B4BA-94A3B69C0F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D44D6D32-367F-452C-B4BA-94A3B69C0F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,10 +29,10 @@ Global
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05F21B33-51BA-41D0-AF59-222672A3C1C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A96F8A2C-3182-4B1B-9286-E457EC4DA700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A96F8A2C-3182-4B1B-9286-E457EC4DA700}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A96F8A2C-3182-4B1B-9286-E457EC4DA700}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A96F8A2C-3182-4B1B-9286-E457EC4DA700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
