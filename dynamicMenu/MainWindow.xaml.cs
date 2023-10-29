@@ -113,7 +113,7 @@ namespace WpfApp3
 
             // 生成唯一的檔案名稱，例如使用日期和時間
             string timestamp = DateTime.Now.ToString("yyyyMMddHHmm");
-            string folderPath = "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3"; // 請將 "YourFolderPath" 替換為目標資料夾的路徑
+            string folderPath = "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\dynamicMenu"; // 請將 "YourFolderPath" 替換為目標資料夾的路徑
             string orderFileName = Path.Combine(folderPath, "Order_" + timestamp + ".txt");
 
             // 儲存訂單到新的 txt 檔案

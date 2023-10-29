@@ -1,7 +1,4 @@
-﻿using orderDrink;
-using System;
-
-namespace orderDrink
+﻿namespace orderDrink
 {
     class Program
     {
