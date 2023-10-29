@@ -1,49 +1,32 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "dynamicMenu/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/dynamicMenu.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/dynamicMenu.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "dynamicMenu/1.0.0": {
-      "type": "project",
-      "path": "../WpfApp3/dynamicMenu.csproj",
-      "msbuildProject": "../WpfApp3/dynamicMenu.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "net6.0": [
-      "dynamicMenu >= 1.0.0"
+      "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zhuang\\.nuget\\packages\\": {},
+    "C:\\Users\\pudy6\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+      "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
       "projectName": "orderDrink",
-      "projectPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
-      "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
-      "outputPath": "C:\\important\\zhuang-c-sharp\\orderDrink\\obj\\",
+      "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\orderDrink.csproj",
+      "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
+      "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\orderDrink\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pudy6\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,8 +42,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
-              "projectPath": "C:\\important\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
+            "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
+              "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj"
             }
           }
         }
@@ -96,10 +79,10 @@
   },
   "logs": [
     {
-      "code": "NU1201",
+      "code": "NU1104",
       "level": "Error",
-      "message": "專案 dynamicMenu 與 net6.0 (.NETCoreApp,Version=v6.0) 不相容。 專案 dynamicMenu 支援: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "dynamicMenu",
+      "message": "找不到專案 'D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj'。請確定專案參考有效，且該專案檔存在。",
+      "libraryId": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
       "targetGraphs": [
         "net6.0"
       ]
