@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {}
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj": {}
   },
   "projects": {
-    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj": {
+    "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
-        "projectName": "dynamicMenu",
-        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\dynamicMenu.csproj",
+        "projectUniqueName": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj",
+        "projectName": "painterDraw",
+        "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\painterDraw.csproj",
         "packagesPath": "C:\\Users\\pudy6\\.nuget\\packages\\",
-        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\WpfApp3\\obj\\",
+        "outputPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\painterDraw\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
