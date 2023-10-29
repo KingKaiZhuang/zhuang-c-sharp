@@ -1,33 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "20231005/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/20231005.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/20231005.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      }
-    }
+    "net6.0-windows7.0": {}
   },
-  "libraries": {
-    "20231005/1.0.0": {
-      "type": "project",
-      "path": "../20231005/20231005.csproj",
-      "msbuildProject": "../20231005/20231005.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "20231005 >= 1.0.0"
-    ]
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\pudy6\\.nuget\\packages\\": {},
@@ -61,11 +39,7 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj": {
-              "projectPath": "D:\\Study_Kai\\五專三上\\zhuang-c-sharp\\20231005\\20231005.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
