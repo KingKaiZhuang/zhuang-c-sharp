@@ -7,8 +7,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\orderDrink\orderDrink.csproj" />
-  </ItemGroup>
-
 </Project>
