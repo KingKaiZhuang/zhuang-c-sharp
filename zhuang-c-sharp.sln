@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp2", "WpfApp2\WpfApp2.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dynamicMenu", "dynamicMenu\dynamicMenu.csproj", "{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumber", "PrimeNumber\PrimeNumber.csproj", "{FC5805FD-A601-412F-B04B-3DFA7E70B04A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBA422F1-8F8C-477F-A5F4-960BD836C3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5805FD-A601-412F-B04B-3DFA7E70B04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5805FD-A601-412F-B04B-3DFA7E70B04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5805FD-A601-412F-B04B-3DFA7E70B04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5805FD-A601-412F-B04B-3DFA7E70B04A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
