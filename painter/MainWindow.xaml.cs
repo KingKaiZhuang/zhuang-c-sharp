@@ -229,7 +229,7 @@ namespace painter
                 RenderTargetBitmap renderBitmap = new RenderTargetBitmap(
                     (int)myCanvas.ActualWidth,
                     (int)myCanvas.ActualHeight,
-                    64d, 64d, PixelFormats.Default);
+                    96d, 96d, PixelFormats.Default);
 
                 // Render the canvas to the RenderTargetBitmap
                 renderBitmap.Render(myCanvas);
