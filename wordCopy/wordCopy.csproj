@@ -7,4 +7,30 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="bold-solid.png" />
+    <None Remove="bold-solid.svg" />
+    <None Remove="file-regular.jpg" />
+    <None Remove="file-regular.png" />
+    <None Remove="folder-open-regular.png" />
+    <None Remove="italic-solid.png" />
+    <None Remove="save-icon.jpg" />
+    <None Remove="trash-can-solid.jpg" />
+    <None Remove="trash-can-solid.png" />
+    <None Remove="underline-solid.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bold-solid.png" />
+    <Resource Include="bold-solid.svg" />
+    <Resource Include="file-regular.jpg" />
+    <Resource Include="file-regular.png" />
+    <Resource Include="folder-open-regular.png" />
+    <Resource Include="italic-solid.png" />
+    <Resource Include="save-icon.jpg" />
+    <Resource Include="trash-can-solid.jpg" />
+    <Resource Include="trash-can-solid.png" />
+    <Resource Include="underline-solid.png" />
+  </ItemGroup>
+
 </Project>

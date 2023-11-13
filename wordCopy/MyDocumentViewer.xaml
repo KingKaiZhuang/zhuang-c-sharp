@@ -6,7 +6,37 @@
         xmlns:local="clr-namespace:wordCopy"
         mc:Ignorable="d"
         Title="MyDocumentViewer" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <ToolBarTray Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" DockPanel.Dock="Top">
+            <ToolBar Height="40" Width="170">
+                <Button x:Name="newButton" Width="35" Height="35">
+                    <Image Width="30" Height="30" Source="/folder-open-regular.png" />
+                </Button>
+                <Button x:Name="openButton" Width="35" Height="35">
+                    <Image Width="30" Height="30" Source="/file-regular.png"/>
+                </Button>
+                <Button x:Name="saveButton" Width="35" Height="35">
+                    <Image Width="25" Height="25" Source="/save-icon.jpg" />
+                </Button>
+                <Button x:Name="clearButton" Width="35" Height="35">
+                    <Image Width="30" Height="30" Source="/trash-can-solid.png" />
+                </Button>
+            </ToolBar>
+            <ToolBar>
+                <ToggleButton x:Name="boldButton" Height="35" Width="35">
+                    <Image Width="25" Height="25" Source="/bold-solid.png" />
+                </ToggleButton>
+                <ToggleButton x:Name="italicButton" Height="35" Width="35">
+                    <Image Width="30" Height="30" Source="/italic-solid.png" />
+                </ToggleButton>
+                <ToggleButton x:Name="underlineButton" Height="35" Width="35">
+                    <Image Width="30" Height="30" Source="/underline-solid.png" />
+                </ToggleButton>
+            </ToolBar>
+        </ToolBarTray>
+
+        <RichTextBox x:Name="rtbEditor" Background="#FFFFFFED">
+
+        </RichTextBox>
+    </DockPanel>
 </Window>
