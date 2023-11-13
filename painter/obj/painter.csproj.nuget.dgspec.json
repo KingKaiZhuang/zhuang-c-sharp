@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\painter\\painter.csproj": {}
+    "C:\\important\\zhuang-c-sharp\\painter\\painter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\painter\\painter.csproj": {
+    "C:\\important\\zhuang-c-sharp\\painter\\painter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\painter\\painter.csproj",
+        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\painter\\painter.csproj",
         "projectName": "painter",
-        "projectPath": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\painter\\painter.csproj",
-        "packagesPath": "C:\\Users\\STUST\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\STUST\\Documents\\zhuang-c-sharp\\painter\\obj\\",
+        "projectPath": "C:\\important\\zhuang-c-sharp\\painter\\painter.csproj",
+        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
+        "outputPath": "C:\\important\\zhuang-c-sharp\\painter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\STUST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
