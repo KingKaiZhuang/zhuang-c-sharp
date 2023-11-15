@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using wordCopy;
 
 namespace wordCopy
 {
@@ -28,7 +29,7 @@ namespace wordCopy
         private void openButton_Click(object sender, RoutedEventArgs e)
         {
             MyDocumentViewer myDocumentViewer = new MyDocumentViewer();
-            myDocumentViewer.ShowDialog();
+            myDocumentViewer.Show();
         }
     }
 }
