@@ -37,9 +37,9 @@
                 <ToggleButton x:Name="underlineButton" Command="EditingCommands.ToggleUnderline" Height="35" Width="35">
                     <Image Width="35" Height="35" Source="/underline-solid.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </ToggleButton>
-                <xctk:ColorPicker x:Name="fontColorPicker" Width="100" Height="35" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                <ComboBox x:Name="fontFamilyComboBox" Height="35" Width="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFD2FFBE"/>
-                <ComboBox x:Name="fontSizeComboBox" Height="35" Width="50" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFB1D1FF"/>
+                <xctk:ColorPicker x:Name="fontColorPicker" Width="100" Height="35" VerticalAlignment="Center" HorizontalAlignment="Left" SelectedColorChanged="fontColorPicker_SelectedColorChanged"/>
+                <ComboBox x:Name="fontFamilyComboBox" Height="35" Width="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFD2FFBE" SelectionChanged="fontFamilyComboBox_SelectionChanged"/>
+                <ComboBox x:Name="fontSizeComboBox" Height="35" Width="50" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFB1D1FF" SelectionChanged="fontSizeComboBox_SelectionChanged"/>
             </ToolBar>
         </ToolBarTray>
         <RichTextBox x:Name="rtbEditor" Background="#FFF7F6ED" SelectionChanged="rtbEditor_SelectionChanged">
