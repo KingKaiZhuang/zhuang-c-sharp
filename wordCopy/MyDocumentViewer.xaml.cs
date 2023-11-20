@@ -1,6 +1,9 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace wordCopy
 {
@@ -9,9 +12,18 @@ namespace wordCopy
     /// </summary>
     public partial class MyDocumentViewer : Window
     {
+        Color fontColor = Colors.Red;
         public MyDocumentViewer()
         {
             InitializeComponent();
+            fontColorPicker.SelectedColor = fontColor;
+            foreach(FontFamily fontFamily in Fonts.SystemFontFamilies)
+            {
+                fontFamilyComboBox.Items.Add(fontFamily.Source);
+            }
+            fontFamilyComboBox.SelectedIndex = 8;
+
+            fontSizeComboBox.ItemsSource = new List<Double>() { 8,9,10,12,20,24,32,40,50,60,80,90};
         }
 
         private void NewCommand_Executed(object sender, ExecutedRoutedEventArgs e)
@@ -19,6 +31,7 @@ namespace wordCopy
             // 在這裡實現「新建」的操作，例如打開一個新文件、清空文檔等
             MyDocumentViewer myDocumentViewer = new MyDocumentViewer();
             myDocumentViewer.Show();
+
         }
 
         private void OpenCommand_Executed(object sender, ExecutedRoutedEventArgs e)

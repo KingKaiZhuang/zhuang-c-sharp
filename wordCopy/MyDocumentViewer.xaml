@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MyDocumentViewer" Height="450" Width="800">
     <Window.CommandBindings>
@@ -12,7 +13,7 @@
     </Window.CommandBindings>
     <DockPanel>
         <ToolBarTray Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" DockPanel.Dock="Top" Background="#FFE3ECF6">
-            <ToolBar Height="40" Width="200">
+            <ToolBar x:Name="ApplicationToolBar" Height="40" Width="200">
                 <Button x:Name="newButton" Command="ApplicationCommands.New" Width="35" Height="35">
                     <Image Width="35" Height="35" Source="/file-regular.png"/>
                 </Button>
@@ -26,16 +27,19 @@
                     <Image Width="35" Height="35" Source="/trash-can-solid.png"/>
                 </Button>
             </ToolBar>
-            <ToolBar>
+            <ToolBar x:Name="editingToolBar" Width="400">
                 <ToggleButton x:Name="boldButton" Command="EditingCommands.ToggleBold" Height="35" Width="35">
-                    <Image Width="35" Height="35" Source="/bold-solid.png"/>
+                    <Image Width="25" Height="25" Source="/bold-solid.png"/>
                 </ToggleButton>
                 <ToggleButton x:Name="italicButton" Command="EditingCommands.ToggleItalic" Height="35" Width="35">
-                    <Image Width="35" Height="35" Source="/italic-solid.png"/>
+                    <Image Width="35" Height="35" Source="/italic-solid.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </ToggleButton>
                 <ToggleButton x:Name="underlineButton" Command="EditingCommands.ToggleUnderline" Height="35" Width="35">
-                    <Image Width="35" Height="35" Source="/underline-solid.png"/>
+                    <Image Width="35" Height="35" Source="/underline-solid.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </ToggleButton>
+                <xctk:ColorPicker x:Name="fontColorPicker" Width="100" Height="35" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <ComboBox x:Name="fontFamilyComboBox" Height="35" Width="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFD2FFBE"/>
+                <ComboBox x:Name="fontSizeComboBox" Height="35" Width="50" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFB1D1FF"/>
             </ToolBar>
         </ToolBarTray>
         <RichTextBox x:Name="rtbEditor" Background="#FFF7F6ED" SelectionChanged="rtbEditor_SelectionChanged">
