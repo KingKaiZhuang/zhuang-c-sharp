@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -32,17 +34,38 @@ namespace wordCopy
             // 在這裡實現「新建」的操作，例如打開一個新文件、清空文檔等
             MyDocumentViewer myDocumentViewer = new MyDocumentViewer();
             myDocumentViewer.Show();
-
         }
 
         private void OpenCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            MessageBox.Show("OpenCommand");
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "Rich Text Format檔案|*.rtf|所有檔案|*.*";
+            if (fileDialog.ShowDialog() == true)
+            {
+                TextRange range = new TextRange(rtbEditor.Document.ContentStart, rtbEditor.Document.ContentEnd);
+                if(range.Text == "" )
+                {
+                    MessageBox.Show("檔案無內容");
+                }
+                using (FileStream fileStream = new FileStream(fileDialog.FileName, FileMode.Open))
+                {
+                    range.Load(fileStream, DataFormats.Rtf);
+                }
+            }
         }
 
         private void SaveCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            MessageBox.Show("SaveCommand");
+            SaveFileDialog fileDialog = new SaveFileDialog();
+            fileDialog.Filter = "Rich Text Format檔案|*.rtf|所有檔案|*.*";
+            if(fileDialog.ShowDialog() == true)
+            {
+                TextRange range = new TextRange(rtbEditor.Document.ContentStart, rtbEditor.Document.ContentEnd);
+                using (FileStream fileStream = new FileStream(fileDialog.FileName, FileMode.Create))
+                {
+                    range.Save(fileStream, DataFormats.Rtf);
+                }
+            }
         }
 
         private void rtbEditor_SelectionChanged(object sender, RoutedEventArgs e)
@@ -96,6 +119,9 @@ namespace wordCopy
             }
         }
 
-
+        private void clearButton_Click(object sender, RoutedEventArgs e)
+        {
+            rtbEditor.Document.Blocks.Clear();
+        }
     }
 }
