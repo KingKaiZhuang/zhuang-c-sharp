@@ -27,7 +27,7 @@
                     <Image Width="35" Height="35" Source="/trash-can-solid.png"/>
                 </Button>
             </ToolBar>
-            <ToolBar x:Name="editingToolBar" Width="400">
+            <ToolBar x:Name="editingToolBar" Width="500">
                 <ToggleButton x:Name="boldButton" Command="EditingCommands.ToggleBold" Height="35" Width="35">
                     <Image Width="25" Height="25" Source="/bold-solid.png"/>
                 </ToggleButton>
@@ -40,6 +40,7 @@
                 <xctk:ColorPicker x:Name="fontColorPicker" Width="100" Height="35" VerticalAlignment="Center" HorizontalAlignment="Left" SelectedColorChanged="fontColorPicker_SelectedColorChanged"/>
                 <ComboBox x:Name="fontFamilyComboBox" Height="35" Width="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFD2FFBE" SelectionChanged="fontFamilyComboBox_SelectionChanged"/>
                 <ComboBox x:Name="fontSizeComboBox" Height="35" Width="50" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Background="#FFB1D1FF" SelectionChanged="fontSizeComboBox_SelectionChanged"/>
+                <xctk:ColorPicker x:Name="backgroundPicker" Width="60" Height="35" VerticalAlignment="Center" HorizontalAlignment="Left" SelectedColorChanged="backgroundPicker_SelectedColorChanged"/>
             </ToolBar>
         </ToolBarTray>
         <RichTextBox x:Name="rtbEditor" Background="#FFF7F6ED" SelectionChanged="rtbEditor_SelectionChanged">

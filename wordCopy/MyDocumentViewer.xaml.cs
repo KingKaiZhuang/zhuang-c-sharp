@@ -15,17 +15,19 @@ namespace wordCopy
     public partial class MyDocumentViewer : Window
     {
         Color fontColor = Colors.Red;
+
         public MyDocumentViewer()
         {
             InitializeComponent();
             fontColorPicker.SelectedColor = fontColor;
-            foreach(FontFamily fontFamily in Fonts.SystemFontFamilies)
+            // 修改這一行
+            foreach (FontFamily fontFamily in Fonts.SystemFontFamilies)
             {
                 fontFamilyComboBox.Items.Add(fontFamily.Source);
             }
             fontFamilyComboBox.SelectedIndex = 2;
 
-            fontSizeComboBox.ItemsSource = new List<Double>() { 8,9,10,12,20,24,32,40,50,60,80,90};
+            fontSizeComboBox.ItemsSource = new List<Double>() { 8, 9, 10, 12, 20, 24, 32, 40, 50, 60, 80, 90 };
             fontSizeComboBox.SelectedIndex = 3;
         }
 
@@ -39,14 +41,10 @@ namespace wordCopy
         private void OpenCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.Filter = "Rich Text Format檔案|*.rtf|所有檔案|*.*";
+            fileDialog.Filter = "Rich Text Format檔案|*.rtf|Hyper Text Markup Language|.html|所有檔案|*.*";
             if (fileDialog.ShowDialog() == true)
             {
                 TextRange range = new TextRange(rtbEditor.Document.ContentStart, rtbEditor.Document.ContentEnd);
-                if(range.Text == "" )
-                {
-                    MessageBox.Show("檔案無內容");
-                }
                 using (FileStream fileStream = new FileStream(fileDialog.FileName, FileMode.Open))
                 {
                     range.Load(fileStream, DataFormats.Rtf);
@@ -57,7 +55,7 @@ namespace wordCopy
         private void SaveCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             SaveFileDialog fileDialog = new SaveFileDialog();
-            fileDialog.Filter = "Rich Text Format檔案|*.rtf|所有檔案|*.*";
+            fileDialog.Filter = "Rich Text Format檔案|*.rtf|Hyper Text Markup Language|.html|所有檔案|*.*";
             if(fileDialog.ShowDialog() == true)
             {
                 TextRange range = new TextRange(rtbEditor.Document.ContentStart, rtbEditor.Document.ContentEnd);
@@ -88,6 +86,8 @@ namespace wordCopy
             // 判斷選中的文字的字體大小
             property = rtbEditor.Selection.GetPropertyValue(TextElement.ForegroundProperty) as SolidColorBrush;
             fontSizeComboBox.SelectedItem = property;
+
+
             
             SolidColorBrush? foregroundPropety = rtbEditor.Selection.GetPropertyValue(TextElement.ForegroundProperty) as SolidColorBrush;
             
@@ -95,6 +95,7 @@ namespace wordCopy
             {
                 fontColorPicker.SelectedColor = foregroundPropety.Color;
             }
+
         }
 
         private void fontColorPicker_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)
@@ -123,5 +124,16 @@ namespace wordCopy
         {
             rtbEditor.Document.Blocks.Clear();
         }
+
+        private void backgroundPicker_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)
+        {
+            if (e.NewValue.HasValue)
+            {
+                Color backgroundColor = e.NewValue.Value;
+                SolidColorBrush backgroundBrush = new SolidColorBrush(backgroundColor);
+                rtbEditor.Background = backgroundBrush;
+            }
+        }
+
     }
 }
