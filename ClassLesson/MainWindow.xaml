@@ -21,7 +21,7 @@
             <Label Content="學生" FontSize="24" VerticalContentAlignment="Center"
                    Margin="100,0,0,0"/>
             <ComboBox x:Name="cmbStudent" Width="150" VerticalAlignment="Center"
-                      HorizontalAlignment="Left"/>
+                      HorizontalAlignment="Left" SelectionChanged="cmbStudent_SelectionChanged"/>
         </StackPanel>
         <StatusBar Grid.Row="2" Grid.ColumnSpan="3">
             <Label x:Name="labelStatus" VerticalAlignment="Center" 
