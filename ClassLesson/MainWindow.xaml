@@ -26,7 +26,23 @@
         <StatusBar Grid.Row="2" Grid.ColumnSpan="3">
             <Label x:Name="labelStatus" VerticalAlignment="Center" 
                    HorizontalAlignment="Left" Margin="100,0,0,0"/>
-
         </StatusBar>
+        <TabControl Grid.Row="1 " Background="#FFE4FFE4">
+            <TabItem Header="以教師來分類課程">
+                <TreeView Background="#FFFFDFB7"/>
+            </TabItem>
+            <TabItem Header="所有課程">
+                <ListBox Background="#FFABEAFF" />
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <Button x:Name="btnRegister" Content="選課" Width="80" Height="50" 
+                    Margin="0,100,0,0" FontSize="16" FontWeight="Bold"/>
+            <Button x:Name="btnWithdrawl" Content="退選" Width="80" Height="50" 
+                    Margin="0,20,0,0" FontSize="16" FontWeight="Bold"/>
+            <Button x:Name="btnSave" Content="儲存紀錄" Width="80" Height="50" 
+                    Margin="0,20,0,0" FontSize="16" FontWeight="Bold"/>
+        </StackPanel>
+        <ListView Grid.Row="1" Grid.Column="2" Background="#FFE5DFFF"  />
     </Grid>
 </Window>
