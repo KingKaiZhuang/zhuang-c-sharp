@@ -23,11 +23,14 @@
             <ComboBox x:Name="cmbStudent" Width="150" VerticalAlignment="Center"
                       HorizontalAlignment="Left" SelectionChanged="cmbStudent_SelectionChanged"/>
         </StackPanel>
+        <!-- 底部 -->
         <StatusBar Grid.Row="2" Grid.ColumnSpan="3">
             <Label x:Name="labelStatus" VerticalAlignment="Center" 
                    HorizontalAlignment="Left" Margin="100,0,0,0"/>
         </StatusBar>
-        <TabControl Grid.Row="1 " Background="#FFE4FFE4">
+        
+        <TabControl Grid.Row="1" Background="#FFE4FFE4">
+            <!-- 以教師來分類課程 -->
             <TabItem Header="以教師來分類課程">
                 <TreeView x:Name="tvTeacher" Background="#FFFFDFB7">
                     <TreeView.Resources>
@@ -44,6 +47,7 @@
                     </TreeView.Resources>
                 </TreeView>
             </TabItem>
+            <!-- 所有課程 -->
             <TabItem Header="所有課程">
                 <ListBox Background="#FFABEAFF" />
             </TabItem>
