@@ -1,11 +1,17 @@
-﻿using System.Collections.Generic;
+﻿
+using Microsoft.Win32;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net.Http.Json;
+using System.Text.Encodings.Web;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Text.Unicode;
 using System.Windows;
 
 namespace ClassLesson
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         List<Student> students = new List<Student>();
@@ -19,6 +25,7 @@ namespace ClassLesson
 
         List<Record> records = new List<Record>();
         Record selectedRecord = null;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -64,12 +71,19 @@ namespace ClassLesson
 
         private void InitializeStudent()
         {
-            students.Add(new Student { StudentId = "A1234567", StudentName = "陳小明" });
-            students.Add(new Student { StudentId = "A1234678", StudentName = "王小美" });
-            students.Add(new Student { StudentId = "A1234789", StudentName = "林小英" });
+            string jsonFilePath = "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\ClassLesson\\2023student.json";
+            string jsonContents = System.IO.File.ReadAllText(jsonFilePath);
+
+            List<Student> studentsFromJson = JsonSerializer.Deserialize<List<Student>>(jsonContents);
+
+            foreach (var student in studentsFromJson)
+            {
+                students.Add(new Student { StudentId = student.StudentId, StudentName = student.StudentName });
+            }
 
             cmbStudent.ItemsSource = students;
             cmbStudent.SelectedIndex = 0;
+
         }
 
         private void cmbStudent_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -137,6 +151,25 @@ namespace ClassLesson
                 records.Remove(selectedRecord);
                 lvRecord.ItemsSource = records;
                 lvRecord.Items.Refresh();
+            }
+        }
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Json文件 (*.json)|*.json|All Files (*.*)|*.*";
+            saveFileDialog.Title = "儲存學生選課紀錄";
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                JsonSerializerOptions options = new JsonSerializerOptions
+                {
+                    Encoder = JavaScriptEncoder.Create(UnicodeRanges.All),
+                    ReferenceHandler = ReferenceHandler.Preserve,
+                    WriteIndented = true
+                };
+
+                string jsonString = JsonSerializer.Serialize(records, options);
+                File.WriteAllText(saveFileDialog.FileName, jsonString);
             }
         }
     }

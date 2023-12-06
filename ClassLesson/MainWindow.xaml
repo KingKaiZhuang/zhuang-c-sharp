@@ -79,7 +79,7 @@
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
             <Button x:Name="btnRegister" Content="選課" Width="80" Height="50" Margin="0,100,0,0" FontSize="16" FontWeight="Bold" Click="btnRegister_Click" />
             <Button x:Name="btnWithdrawl" Content="退選" Width="80" Height="50" Margin="0,20,0,0" FontSize="16" FontWeight="Bold" Click="btnWithdrawl_Click" />
-            <Button x:Name="btnSave" Content="儲存紀錄" Width="80" Height="50" Margin="0,20,0,0" FontSize="16" FontWeight="Bold" />
+            <Button x:Name="btnSave" Content="儲存紀錄" Width="80" Height="50" Margin="0,20,0,0" FontSize="16" FontWeight="Bold" Click="btnSave_Click" />
         </StackPanel>
         <ListView x:Name="lvRecord" ItemsSource="{Binding records}" Grid.Row="1" Grid.Column="2" Background="#FFE6DEFC" SelectionChanged="lvRecord_SelectionChanged">
             <ListView.View>
