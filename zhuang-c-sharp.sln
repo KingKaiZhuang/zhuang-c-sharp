@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "painter", "painter\painter.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wordCopy", "wordCopy\wordCopy.csproj", "{B35B906B-681A-4977-839D-C97BB8799D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLesson", "ClassLesson\ClassLesson.csproj", "{98C4F47F-C88F-4B1C-93F8-427E9E520819}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLesson", "ClassLesson\ClassLesson.csproj", "{98C4F47F-C88F-4B1C-93F8-427E9E520819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web-bugs", "Web-bugs\Web-bugs.csproj", "{EA17A610-38ED-4FFB-A8EE-917AA736D5A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{98C4F47F-C88F-4B1C-93F8-427E9E520819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98C4F47F-C88F-4B1C-93F8-427E9E520819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98C4F47F-C88F-4B1C-93F8-427E9E520819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA17A610-38ED-4FFB-A8EE-917AA736D5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA17A610-38ED-4FFB-A8EE-917AA736D5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA17A610-38ED-4FFB-A8EE-917AA736D5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA17A610-38ED-4FFB-A8EE-917AA736D5A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
