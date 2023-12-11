@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="course.png" />
     <Resource Include="teacher.png" />
   </ItemGroup>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj": {}
+    "C:\\important\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj": {
+    "C:\\important\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj",
+        "projectUniqueName": "C:\\important\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj",
         "projectName": "wordCopy",
-        "projectPath": "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj",
-        "packagesPath": "C:\\Users\\owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\owner\\Documents\\zhuang-c-sharp\\wordCopy\\obj\\",
+        "projectPath": "C:\\important\\zhuang-c-sharp\\wordCopy\\wordCopy.csproj",
+        "packagesPath": "C:\\Users\\zhuang\\.nuget\\packages\\",
+        "outputPath": "C:\\important\\zhuang-c-sharp\\wordCopy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zhuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
