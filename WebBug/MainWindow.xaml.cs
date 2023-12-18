@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LiveCharts;
+using LiveCharts.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -19,6 +21,7 @@ namespace WebBug
         AQIdata aqidata = new AQIdata();
         List<Field> fields = new List<Field>();
         List<Record> records = new List<Record>();
+        SeriesCollection seriesCollection = new SeriesCollection();
 
         public MainWindow()
         {
@@ -59,13 +62,47 @@ namespace WebBug
                             Width = 120,
                             FontSize = 14,
                             FontWeight = FontWeights.Bold
-                        };                      
-                        
+                        };
 
+                        cb.Checked += UpdateChart;
                         DataWrapPanel.Children.Add(cb);
                     }
                 }
             }
+        }
+
+        private void UpdateChart(object sender, RoutedEventArgs e)
+        {
+            seriesCollection.Clear();
+            foreach(CheckBox cb in DataWrapPanel.Children)
+            {
+                if (cb.IsChecked == true)
+                {
+                    var tab = cb.Tag as String;
+                    ColumnSeries columnSeries = new ColumnSeries();
+                    ChartValues<double> values = new ChartValues<double>();
+                    List<String> labels = new List<String>();
+
+                    foreach(var record in records)
+                    {
+                        var propertyInfo = typeof(Record).GetProperty(tab);
+                        if(propertyInfo != null)
+                        {
+                            string value = propertyInfo.GetValue(record) as string;
+                            if (double.TryParse(value, out double v))
+                            {
+                                values.Add(v);
+                                labels.Add(record.sitename);
+                            }
+                        }
+                    }
+                    columnSeries.Values = values;
+                    columnSeries.Title = tab;
+                    columnSeries.LabelPoint = point => $"{labels[(int)point.X]}";
+                    seriesCollection.Add(columnSeries);
+                }
+            }
+            AQIChart.Series = seriesCollection;
         }
 
         private async Task<string> FetchContentAsync(string url)
